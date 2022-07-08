@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/main_page.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <title>Межрегиональный департамент строительной экспертизы</title>
+</head>
+<body>
+    <div class="modal_overlay" id="overlay" style="display: none;">
+        <form class="modal_window" id="modal">
+            <h3>Бесплатная консультация</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="modal_submit">
+                    <div class="modal_acceptance">
+                        <input type="checkbox" name="" id="modal_acceptance">
+                        <label for="modal_acceptance" class="checkbox_label"></label>
+                        <label for="acceptance">Я согласен на обработку <br> персональных данных</label>
+                    </div>
+                    <button type="button" class="modal_button form_button">Получить консультацию</button>
+                </div>
+        </form>
+    </div>
+    <header class="header">
+        <div class="header__burger_menu" id="burger_menu">
+                <ul class="burger_navigation" id="burger_nav">
+                    <li><a href="./about.html">О департаменте</a></li>
+                    <li><a href="./media.html">СМИ</a></li>
+                    <li><a href="./practice.html">Практика</a></li>
+                    <li><a href="./services_1.html">Услуги</a></li>
+                    <li><a href="./articles.html">Статьи</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+        </div>
+        <div class="header__top">
+            <div class="_container">
+                <div class="header__title">
+                    <div class="logo">
+                        <a href="./index.html"><img src="../img/Logo.svg" alt="Логотип компании" height="100%" width="100%"></a>
+                    </div>
+                    <p>Межрегиональный департамент <br> строительной экспертизы</p>
+                </div>
+                <div class="header__connection">
+                    <div class="connection_buttons">
+                        <p>Написать в Whatsapp</p>
+                        <p onclick="ShowModal()">Бесплатная консультация</p>
+                    </div>
+                    <a href="#">8 800 300 20 30</a>
+                </div>
+                <div class="burger">
+                    <img src="./img/burger.svg" alt="меню" width="100%" id="burger">
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="_container">
+                <nav class="nav">
+                    <a href="./about.html">О департаменте</a>
+                    <a href="./media.html">СМИ</a>
+                    <a href="./practice.html">Практика</a>
+                    <a href="./services_1.html">Услуги</a>
+                    <a href="./articles.html">Статьи</a>
+                    <a href="./contacts.html">Контакты</a>
+                </nav>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main_first _container">
+        <div class="company_logo">
+            <img src="./img/big_logo.svg" alt="Логотип компании" width="100%">
+        </div>
+        <div class="description">
+            <h1><a href="./about.html">Что такое «Межрегиональный <br> департамент строительной <br> экспертизы»?</a></h1>
+            <p>Общественная организация по контролю в сфере строительства объектов недвижимости на территории Российской Федерации.</p>
+            <p>Организация  основана в 2011 году в инициативной группой Адвокатов и собственников недвижимости.</p>
+            <p>Ассоциация развивает направления контроля за строительными компаниями, которые позволят придти к более высокому качеству сдаваемых объектов недвижимости, с соблюдением сроков сдачи по договорам ДДУ.</p>
+            <a href="./about.html" class="button">Подробнее</a>
+        </div>
+        <div class="building_image">
+            <img src="./img/building.png" alt="Межрегиональный департамент" height="100%" width="100%">
+        </div>
+    </section>
+
+    <section class="propositions">
+        <div class="question" id="question">
+                <form action="#" class="question__form">
+                    <p>Задайте свой вопрос эксперту</p>
+                    <div class="inputs">
+                        <div class="inputs_left">
+                            <textarea id="question_area" placeholder="Ваш вопрос"></textarea>
+                        </div>
+                        <div class="inputs_right">
+                            <input type="text" placeholder="Имя">
+                            <input type="tel" placeholder="Телефон"> 
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <div class="acceptance">
+                            <input type="checkbox" id="acceptance">
+                            <label for="acceptance" class="checkbox_label"></label>
+                            <label for="acceptance">Я согласен на обработку персональных данных</label>
+                        </div>
+                        <button type="button" class="button form_button" id="consultation">Получить консультацию</button>
+                    </div>
+                </form>
+        </div>
+        <div class="_container">
+            <div class="proposition__card">
+                <div class="card_top">
+                    <div class="card_text">
+                        <p>Услуга</p> 
+                        <h3>Приемка квартиры с ремонтом в новостройке</h3>
+                    </div>
+                    <div class="image">
+                        <img src="./img/card_1.png" alt="Картинка" height="100%">
+                    </div>
+                </div>
+                <div class="card_bottom">
+                    <p>МОЙ-ДОМ.РФ заниматься бесплатной юридической консультацией, приёмкой квартир от застройщика, составлением актов осмотра, определением сметной стоимости исправления дефектов</p>
+                </div>
+                <div class="button_wrapper">
+                    <a href="./services_1.html" class="button">Заказать</a>
+                </div>
+            </div>
+            <div class="proposition__card">
+                <div class="card_top">
+                    <div class="card_text">
+                        <p>Услуга</p> 
+                        <h3>Получение денежной компенсации на исправление строительных недостатков</h3>
+                    </div>
+                    <div class="image">
+                        <img src="./img/card_2.png" alt="Картинка" height="100%">
+                    </div>
+                </div>
+                <div class="card_bottom">
+                    <p>МОЙ-ДОМ.РФ в судебном порядке взыскивает денежную компенсацию на исправление строительных недостатков в новостройках. Ассоциация работает по принципам американской адвокатуры — без предоплаты, берем % только в случае выигрыша в суде.</p>
+                </div>
+                <div class="button_wrapper">
+                    <a href="./services_2.html" class="button">Заказать</a>
+                </div>
+            </div>
+            <div class="proposition__card">
+                <div class="card_top">
+                    <div class="card_text">
+                        <p>Услуга</p> 
+                        <h3>Нарушение сроков сдачи квартиры по договору ДДУ</h3>
+                    </div>
+                    <div class="image">
+                        <img src="./img/card_3.png" alt="Картинка" height="100%">
+                    </div>
+                </div>
+                <div class="card_bottom">
+                    <p>В случае задержки квартир с застройщика взыскивается: сама неустойка за просрочку передачи квартиры — до 2 000 000 рублей + 10–40 тысяч рублей компенсация морального вреда + компенсация убытков за найм жилого помещения в период задержки квартиры + штраф с застройщика в пользу потребителя в размере 50% за неурегулирование спора в добровольном порядке.</p>
+                </div>
+                <div class="button_wrapper">
+                    <a href="./services_3.html" class="button">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_second _container">
+        <div class="block_3">
+            <div class="quality_housing">
+                <div class="quality_housing__img">
+                    <img src="./img/ad_img.png" alt="Качественное жилье" height="100%">
+                </div>
+                <div class="quality_housing__text">
+                    <div class="quality_housing__title">
+                        <p>ПРОГРАММА</p>
+                        <h3>Качественное жилье</h3>
+                    </div>
+                    <p>В рамках указа «О национальных целях развития Российской Федерации на период до 2030 года» стоит улучшение жилищных условий россиян, а главное — увеличение объема ввода жилья. Наша основная задача — проверить на качество как минимум 10000 объектов в указанные сроки и стать гарантом исполнения обязательств данного указа.</p>
+                </div>
+            </div>
+            <ul class="digits">
+                <h3>Межрегиональный департамент строительной экспертизы в цифрах</h3>
+                <li>
+                    <p>11 лет</p>
+                    <p>опыта в защите прав дольщиков</p>
+                </li>
+                <li>
+                    <p>2 филиала</p>
+                    <p>Москва, Воронеж</p>
+                </li>
+                <li>
+                    <p>100% дел</p>
+                    <p>выиграно в суде</p>
+                </li>
+                <li>
+                    <p>3000+</p>
+                    <p>довольных клиентов</p>
+                </li>
+                <li>
+                    <p>56567</p>
+                    <p>Проверенно квартир. Клиент платит только в случае победы в суде</p>
+                </li>
+                <li>
+                    <p>270 млн. руб.</p>
+                    <p>мы вернули нашим клиентам</p>
+                </li>
+            </ul>
+        </div>
+        <div class="block_1">
+                <h2>Публикации в СМИ<a href="./media.html">&#10095</a></h2>
+                <div class="publications">
+                    <article class="article_1">
+                        <div class="article_img">
+                            <img src="./img/article_img.png" alt="Картинка">
+                        </div>
+                        <div class="article_text">
+                            <div class="article_title">
+                                <p>Аргументы и Факты</p><time>20.12.2021</time>
+                            </div>
+                            <h3><a href="#">Что проверить перед подписанием ДДУ, чтобы снизить риски при покупке квартиры?</a></h3>
+                        </div>
+                    </article>
+                    <aside class="aside">
+                        <div class="aside_text">
+                            <div class="article_title">
+                                <p>Аргументы и Факты</p><time>20.12.2021</time>
+                            </div>
+                            <h3><a href="#">Что проверить перед подписанием ДДУ, чтобы снизить риски при покупке квартиры?</a></h3>
+                        </div>
+                        <div class="aside_text">
+                            <div class="article_title">
+                                <p>Аргументы и Факты</p><time>20.12.2021</time>
+                            </div>
+                            <h3><a href="#">Что проверить перед подписанием ДДУ, чтобы снизить риски при покупке квартиры?</a></h3>
+                        </div>
+                        <div class="aside_text">
+                            <div class="article_title">
+                                <p>Аргументы и Факты</p><time>20.12.2021</time>
+                            </div>
+                            <h3><a href="#">Что проверить перед подписанием ДДУ, чтобы снизить риски при покупке квартиры?</a></h3>
+                        </div>
+                        <div class="aside_text">
+                            <div class="article_title">
+                                <p>Аргументы и Факты</p><time>20.12.2021</time>
+                            </div>
+                            <h3><a href="#">Что проверить перед подписанием ДДУ, чтобы снизить риски при покупке квартиры?</a></h3>
+                        </div>
+                    </aside>
+                </div>
+        </div>
+        <div class="block_2">
+            <h2>Статьи<a href="#">&#10095</a></h2>
+            <div class="publications">
+                <article class="article_2">
+                    <div class="article_img">
+                        <img src="./img/article_img.png" alt="Картинка">
+                    </div>
+                    <div class="article_text">
+                        <h3><a href="#">Дополнительные платежи по ДДУ: платить или отказаться?</a></h3>
+                        <p>Застройщик кроме основной суммы за квартиру, или цены договора, может потребовать и другие платежи. Какие платить обязательно, а от каких</p>
+                    </div>
+                </article>
+                <aside class="aside">
+                    <div class="aside_text">
+                        <h3><a href="#">Дополнительные платежи по ДДУ: платить или отказаться?</a></h3>
+                        <p>Застройщик кроме основной суммы за квартиру, или цены договора, может потребовать и другие платежи. Какие платить обязательно, а от каких</p>
+                    </div>
+                    <div class="aside_text">
+                        <h3><a href="#">Дополнительные платежи по ДДУ: платить или отказаться?</a></h3>
+                        <p>Застройщик кроме основной суммы за квартиру, или цены договора, может потребовать и другие платежи. Какие платить обязательно, а от каких</p>
+                    </div>
+                    <div class="aside_text">
+                        <h3><a href="#">Дополнительные платежи по ДДУ: платить или отказаться?</a></h3>
+                        <p>Застройщик кроме основной суммы за квартиру, или цены договора, может потребовать и другие платежи. Какие платить обязательно, а от каких</p>
+                    </div>
+                    <div class="aside_text">
+                        <h3><a href="#">Дополнительные платежи по ДДУ: платить или отказаться?</a></h3>
+                        <p>Застройщик кроме основной суммы за квартиру, или цены договора, может потребовать и другие платежи. Какие платить обязательно, а от каких</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__top _container">
+            <div class="footer__text">
+                <p>Приглашаем к нам в офис на бесплатную консультацию</p>
+                <address>
+                    <h3>Москва, Пресненская набережная 2, 7 этаж, офис 722</h3>
+                    <p>Ежедневно с 10:00 до 20:00</p> 
+                </address>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+            <div class="footer__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b304d0ad71186cc41c9428a3e5732312d154c058d1f530b68991680247b5180&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>            
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="_container">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img src="./img/logo_foot.svg" width="100%" alt="Логотип компании">
+                    </div>
+                    <a href="tel:+1234567890" style="display: block;">8 800 300 20 30</a>
+                </div>
+                <div class="footer__connection">
+                    <p>Написать в Whatsapp</p>
+                    <p onclick="ShowModal()">Бесплатная консультация</p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK_white.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook_white.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram_white.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube_white.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <script src="./js/general_script.js"></script>
+</body>
+</html>
