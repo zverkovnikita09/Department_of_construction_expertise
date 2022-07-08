@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-family: 'Play', sans-serif;
+}
+body{
+    color: #1F242E;
+    overflow-x: hidden;
+}
+body a{
+    color: #1F242E;
+    font-family: inherit;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+._container{
+    max-width: calc(100vw/1.1);
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+._first-block{
+    margin-top: 90px;
+}
+
+/*Custom checkbox*/
+
+input[type='checkbox']{
+    display: none;
+}
+.checkbox_label{
+    min-height: 20px;
+    min-width: 20px;
+    margin: 0;
+    background-image: url(../img/Checkbox.svg);
+    cursor: pointer;
+}
+input[type='checkbox']:checked + label.checkbox_label{
+    background-image: url(../img/Checkbox_checked.svg);
+}
+.checkbox_label:hover{
+    background-image: url(../img/Checkbox_hover.svg);
+}
+input[type='checkbox']:checked + label.checkbox_label:hover{
+    background-image: url(../img/Checkbox_checked_hover.svg);
+}
+
+/*Modal*/
+.modal_overlay{
+    background-color: rgb(46, 46, 46, 0.8);
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.modal_window{
+    user-select: none;
+    background-color: rgb(255, 255, 255, 0);
+    position: fixed;
+    transform: translateY(-150px);
+    transition: transform 0.2s, background-color 0.05s;
+}
+.modal_window.active{
+    background-color: rgb(255, 255, 255, 1);
+    transform: translateY(0);
+}
+.modal_window{
+    padding: 40px;
+    border: 1px solid #D2D6DF;
+    border-top: 10px solid #AFE5FF;
+}
+.modal_window h3{
+    font-size: 2.25rem;
+}
+.modal_window .input{
+    padding: 15px;
+    width: calc(100% - 40px);
+    border: 1px solid #D2D6DF;
+    margin-top: 20px;
+}
+.modal_submit{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+.modal_acceptance{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #6C717B;
+}
+.modal_button{
+    border: none;
+    background-color: #AFE5FF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px 30px;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal_button:hover{
+    background-color: #75D2FF;
+}
+.form__approve{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.approve__button{
+    margin: 0 auto;
+}
