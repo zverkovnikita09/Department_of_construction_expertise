@@ -1,0 +1,65 @@
+body{
+    min-height: 0;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 10fr 4fr;
+}
+.map{
+    position: relative;
+}
+.map img{
+    object-fit: cover;
+}
+.target{
+    position: absolute;
+    width: 2%;
+    cursor: pointer;
+}
+.Moscow{
+    left: 47.7%;
+    top: 17.5%;
+}
+.Voronezh{
+    left: 52.8%;
+    bottom: 25%;
+}
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.address_item{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.address_item__wrapper{
+    grid-column: 2/5;
+}
+.address img{
+    height: 100%;
+    max-height: 30px;
+    width: auto;
+    position: absolute;
+    left: -30px;
+    top: 5px;
+}
+.address h3{
+    position: relative;
+    font-size: 2.25rem;
+}
+.address__content a{
+    font-size: 1.5rem;
+}
+.address__content>p{
+    margin-top: 15px;
+}
+.Voronezh-item{
+    display: none;
+}
+
+@media (max-width: 1475px){
+    html{
+        font-size: 14px;
+    }
+}

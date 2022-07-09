@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap');
+:root{
+    --mainMargin: 40px;
+    --mainPadding: 30px;
+    --small-text-collor: #6C717B;
+    --lineHeight: 1.5rem;
+}
+.main{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 5fr 7fr;
+    grid-column-gap: 60px;
+    margin-bottom: var(--mainMargin);
+}
+.practice_sidebar{
+    border-right: 2px solid #D2D6DF;
+}
+.practice_sidebar__links h2{
+    color: var(--small-text-collor);
+    font-size: 1.5rem;
+}
+.practice_sidebar__links a{
+    display: inline-block;
+    border-bottom: 1px solid #D2D6DF;
+    font-size: 1.75rem;
+    padding: var(--mainPadding);
+    padding-left: 0;
+    color: #1BA6FF;
+}
+.practice_sidebar__links a:last-child{
+    border: none;
+}
+a.disabled{
+    color: var(--small-text-collor);
+    cursor: default;
+    pointer-events: none;
+}
+.apartements {
+    margin: 0 auto;
+}
+.apartements h1{
+    font-size: 2.5rem;
+    margin-bottom: var(--mainMargin);
+}
+.apartments__list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 405px));
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    animation: appearance 1s;
+}
+@keyframes appearance {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.apartements__card{
+    display: flex;
+    background-color: #EDEFF2;
+}
+.apartements__img img{
+    height: 100%;
+    width: 122px;
+}
+.court__img img{
+    height: 100%;
+    width: 170px;
+}
+.apartements_description{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.apartements_description h3{
+    font-size: 1.25rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+.description_bottom{
+    margin-top: 5px;
+}
+.description_bottom p{
+    font-size: 1rem;
+    display: inline-block;
+    color: var(--small-text-collor);
+}
+.description_bottom span{
+    margin-left: 20px;
+    font-size: 3rem;
+}
+.description_court p:first-child{
+    font-size: 2.25rem;
+}
+.description_court p:last-child{
+    font-size: 0.75rem;
+    color: var(--small-text-collor);
+}
+.pages{
+    margin-top: 60px;
+    font-size: 1.25rem;
+    user-select: none;
+    color: #1BA6FF;
+}
+.pages a{
+    color: inherit;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.pages a.disabled{
+    color: var(--small-text-collor);
+}
+.pages a:first-child, .pages a:last-child{
+    color: #1F242E;
+}
+.pages a:first-child:hover, .pages a:last-child:hover{
+    text-decoration: none;
+}
+@media (max-width: 1475px){
+    html{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <title>Контакты</title>
+</head>
+<body>
+    <div class="modal_overlay" id="overlay" style="display: none;">
+        <form class="modal_window" id="modal">
+            <h3>Бесплатная консультация</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="modal_submit">
+                    <div class="modal_acceptance">
+                        <input type="checkbox" name="" id="modal_acceptance">
+                        <label for="modal_acceptance" class="checkbox_label"></label>
+                        <label for="acceptance">Я согласен на обработку <br> персональных данных</label>
+                    </div>
+                    <button type="button" class="modal_button form_button">Получить консультацию</button>
+                </div>
+        </form>
+    </div>
+    <header class="header">
+        <div class="header__burger_menu" id="burger_menu">
+                <ul class="burger_navigation" id="burger_nav">
+                    <li><a href="./about.html">О департаменте</a></li>
+                    <li><a href="./media.html">СМИ</a></li>
+                    <li><a href="./practice.html">Практика</a></li>
+                    <li><a href="./services_1.html">Услуги</a></li>
+                    <li><a href="./articles.html">Статьи</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+        </div>
+        <div class="header__top">
+            <div class="_container">
+                <div class="header__title">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/Logo.svg" alt="Логотип компании" height="100%"></a>
+                    </div>
+                    <p>Межрегиональный департамент <br> строительной экспертизы</p>
+                </div>
+                <div class="header__connection">
+                    <div class="connection_buttons">
+                        <p>Написать в Whatsapp</p>
+                        <p onclick="ShowModal()">Бесплатная консультация</p>
+                    </div>
+                    <a href="#">8 800 300 20 30</a>
+                </div>
+                <div class="burger">
+                    <img src="./img/burger.svg" alt="меню" id="burger">
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="_container">
+                <nav class="nav">
+                    <a href="./about.html">О департаменте</a>
+                    <a href="./media.html">СМИ</a>
+                    <a href="./practice.html">Практика</a>
+                    <a href="./services_1.html">Услуги</a>
+                    <a href="./articles.html">Статьи</a>
+                    <a href="./contacts.html">Контакты</a>
+                </nav>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="map">
+            <img src="./img/contacts/map.png" alt="" height="100%">
+            <img src="./img/contacts/active_target.svg" alt="" class="target Moscow img_active">
+            <img src="./img/contacts/target.svg" alt="" class="target Voronezh">
+        </div>
+        <div class="address">
+            <div class="Moscow-item address_item">
+                <div class="address_item__wrapper">
+                    <h3><img src="./img/contacts/active_target.svg" alt="">Офис в Москве</h3>
+                    <div class="address__content">
+                        <p><a href="tel:#">+7 (495) 414-37-71</a></p>
+                        <p><a href="tel:#">8 800 300 20 30</a></p>
+                        <p>Пресненская набережная 2, <br> 7 этаж, офис 722</p> 
+                        <p>Ежедневно 10:00–19:00</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="Voronezh-item address_item">
+                <div class="address_item__wrapper">
+                    <h3><img src="./img/contacts/active_target.svg" alt="">Офис в Воронеже</h3>
+                    <div class="address__content">
+                        <p><a href="tel:#">+7 (473) 111-11-11</a></p>
+                        <p><a href="tel:#">8 800 300 20 30</a></p>
+                        <p>Пресненская набережная 2, <br> 7 этаж, офис 722</p> 
+                        <p>Ежедневно 11:00–20:00</p> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__top _container">
+            <div class="footer__text">
+                <p>Приглашаем к нам в офис на бесплатную консультацию</p>
+                <address>
+                    <h3>Москва, Пресненская набережная 2, 7 этаж, офис 722</h3>
+                    <p>Ежедневно с 10:00 до 20:00</p> 
+                </address>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+            <div class="footer__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b304d0ad71186cc41c9428a3e5732312d154c058d1f530b68991680247b5180&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>            
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="_container">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img src="./img/logo_foot.svg" alt="Логотип компании">
+                    </div>
+                    <a href="tel:+1234567890" style="display: block;">8 800 300 20 30</a>
+                </div>
+                <div class="footer__connection">
+                    <p>Написать в Whatsapp</p>
+                    <p onclick="ShowModal()">Бесплатная консультация</p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK_white.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook_white.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram_white.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube_white.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <script src="./js/general_script.js"></script>
+    <script src="./js/target_switch.js"></script>
+</body>
+</html>
