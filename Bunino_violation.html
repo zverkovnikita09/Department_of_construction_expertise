@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/article.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <title>Приёмка квартиры в ЖК «Южное Бунино»</title>
+</head>
+<body>
+    <div class="modal_overlay" id="overlay" style="display: none;">
+        <form class="modal_window" id="modal">
+            <h3>Бесплатная консультация</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="modal_submit">
+                    <div class="modal_acceptance">
+                        <input type="checkbox" name="" id="modal_acceptance">
+                        <label for="modal_acceptance" class="checkbox_label"></label>
+                        <label for="acceptance">Я согласен на обработку <br> персональных данных</label>
+                    </div>
+                    <button type="button" class="modal_button form_button">Получить консультацию</button>
+                </div>
+        </form>
+    </div>
+    <header class="header">
+        <div class="header__burger_menu" id="burger_menu">
+                <ul class="burger_navigation" id="burger_nav">
+                    <li><a href="./about.html">О департаменте</a></li>
+                    <li><a href="./media.html">СМИ</a></li>
+                    <li><a href="./practice.html">Практика</a></li>
+                    <li><a href="./services_1.html">Услуги</a></li>
+                    <li><a href="./articles.html">Статьи</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+        </div>
+        <div class="header__top">
+            <div class="_container">
+                <div class="header__title">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/Logo.svg" alt="Логотип компании" height="100%" width="100%"></a>
+                    </div>
+                    <p>Межрегиональный департамент <br> строительной экспертизы</p>
+                </div>
+                <div class="header__connection">
+                    <div class="connection_buttons">
+                        <p>Написать в Whatsapp</p>
+                        <p onclick="ShowModal()">Бесплатная консультация</p>
+                    </div>
+                    <a href="#">8 800 300 20 30</a>
+                </div>
+                <div class="burger">
+                    <img src="./img/burger.svg" alt="меню" width="100%" id="burger">
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="_container">
+                <nav class="nav">
+                    <a href="about.html">О департаменте</a>
+                    <a href="./media.html">СМИ</a>
+                    <a href="./practice.html">Практика</a>
+                    <a href="./services_1.html">Услуги</a>
+                    <a href="./articles.html">Статьи</a>
+                    <a href="./contacts.html">Контакты</a>
+                </nav>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main_section _first-block _container">
+        <section class="left_section">
+            <div class="section_wrapper">
+                <h1>Приёмка квартиры <br> в ЖК «Южное Бунино»</h1>
+                <p>Отделка от застройщика</p>
+                <p>Проверка проходила по 142 параметрам.</p>
+                <div class="selected_image">
+                    <img src="./img/Bunino/item_1.png" id="selected_image" alt="">
+                </div>
+                <div class="images_collection">
+                    <div><img src="./img/Bunino/item_1.png" alt="" class="collection_item selected"></div>
+                    <div><img src="./img/Bunino/item_2.png" alt="" class="collection_item"></div>
+                    <div><img src="./img/Bunino/item_1.png" alt="" class="collection_item"></div>
+                    <div><img src="./img/Bunino/item_1.png" alt="" class="collection_item"></div>
+                    <div><img src="./img/Bunino/item_1.png" alt="" class="collection_item"></div>
+                </div>
+                <button type="button" class="left_section__button button">Получить консультацию</button>
+            </div>
+        </section>
+
+        <section class="right_section">
+            <div class="article_image">
+                <img src="./img/Bunino/article_main.png" alt="">
+            </div>
+            <div class="right_section__title">
+                <p>89</p>
+                <p>нарушений были выявлены нашими экспертами в ходе проверки квартиры в этом ЖК. Были обнаружены такие недостатки, как:</p>
+            </div>
+            <ol class="right_section__list">
+                <li>
+                    <h3>Оконный блок</h3>
+                    <p>Дефекты на лицевых поверхностях профиля ОБ</p>
+                    <p>Загрязнение внутреннего и внешнего профиля ОБ</p>
+                    <p>Требуется регулировка фурнитуры створки оконного блока</p>
+                    <p>Механические повреждения подоконной доски</p>
+                    <p>Не закреплена заглушка на подоконнике</p>
+                    <p>Некорректный откос внутренний</p>
+                    <p>Отклонение от вертикали/горизонтали ОБ более 3мм на всю высоту</p>
+                </li>
+                <li>
+                    <h3>Системы отопления</h3>
+                    <p>Механические повреждения прибора отопительного</p>
+                    <p>Отсутствует регулировочная арматура на радиаторе отопления</p>
+                    <p>Следы коррозии на конвекторе</p>
+                </li>
+            </ol>
+            <form action="" class="consultation_form">
+                <h3>Доверьте профессионалам выявление строительных недостатков</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="submit">
+                    <div class="acceptance">
+                        <input type="checkbox" name="" id="acceptance">
+                        <label for="acceptance" class="checkbox_label"></label>
+                        <label for="acceptance">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="button">Получить консультацию</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__top _container">
+            <div class="footer__text">
+                <p>Приглашаем к нам в офис на бесплатную консультацию</p>
+                <address>
+                    <h3>Москва, Пресненская набережная 2, 7 этаж, офис 722</h3>
+                    <p>Ежедневно с 10:00 до 20:00</p> 
+                </address>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+            <div class="footer__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b304d0ad71186cc41c9428a3e5732312d154c058d1f530b68991680247b5180&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>            
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="_container">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img src="./img/logo_foot.svg" width="100%" alt="Логотип компании">
+                    </div>
+                    <a href="tel:+1234567890" style="display: block;">8 800 300 20 30</a>
+                </div>
+                <div class="footer__connection">
+                    <p>Написать в Whatsapp</p>
+                    <p onclick="ShowModal()">Бесплатная консультация</p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK_white.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook_white.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram_white.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube_white.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/images_switch.js"></script>
+</body>
+</html>
