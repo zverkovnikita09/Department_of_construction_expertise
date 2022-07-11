@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги. Приемка квартиры</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/services.css">
+</head>
+<body>
+    <div class="modal_overlay" id="overlay" style="display: none;">
+        <form class="modal_window" id="modal">
+            <h3>Бесплатная консультация</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="modal_submit">
+                    <div class="modal_acceptance">
+                        <input type="checkbox" name="" id="modal_acceptance">
+                        <label for="modal_acceptance" class="checkbox_label"></label>
+                        <label for="acceptance">Я согласен на обработку <br> персональных данных</label>
+                    </div>
+                    <button type="button" class="modal_button">Получить консультацию</button>
+                </div>
+        </form>
+    </div>
+    <header class="header">
+        <div class="header__burger_menu" id="burger_menu">
+                <ul class="burger_navigation" id="burger_nav">
+                    <li><a href="./about.html">О департаменте</a></li>
+                    <li><a href="./media.html">СМИ</a></li>
+                    <li><a href="./practice.html">Практика</a></li>
+                    <li><a href="./services_1.html">Услуги</a></li>
+                    <li><a href="./articles.html">Статьи</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+        </div>
+        <div class="header__top">
+            <div class="_container">
+                <div class="header__title">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/Logo.svg" alt="Логотип компании" height="100%"></a>
+                    </div>
+                    <p>Межрегиональный департамент <br> строительной экспертизы</p>
+                </div>
+                <div class="header__connection">
+                    <div class="connection_buttons">
+                        <p>Написать в Whatsapp</p>
+                        <p onclick="ShowModal()">Бесплатная консультация</p>
+                    </div>
+                    <a href="#">8 800 300 20 30</a>
+                </div>
+                <div class="burger">
+                    <img src="./img/burger.svg" alt="меню"id="burger">
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="_container">
+                <nav class="nav">
+                    <a href="./about.html">О департаменте</a>
+                    <a href="./media.html">СМИ</a>
+                    <a href="./practice.html">Практика</a>
+                    <a href="./services_1.html">Услуги</a>
+                    <a href="./articles.html">Статьи</a>
+                    <a href="./contacts.html">Контакты</a>
+                </nav>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main _container _first-block">
+        <section class="left-side">
+            <div class="left-side-wrapper">
+                <h3>Услуги</h3>
+                <a href="./services_1.html" class="links disabled">Приемка квартиры с ремонтом в новостройке</a>
+                <a href="./services_2.html" class="links">Получение денежной компенсации на исправление строительных недостатков	</a>
+                <a href="./services_3.html"class='links'>Нарушение сроков сдачи квартиры по договору ДДУ</a>
+
+                <ul class="left-side__block1">
+                    <h3>7 причин доверить решение споров с застройщиком Ассоциацияи защиты собственников недвижимости</h3>
+                    <li>Без предоплаты. Мы работаем за комиссию с выплат застройщика по исполнительному листу (когда вам судом УЖЕ присуждена компенсация). Мы получаем свои деньги только в случае вашей победы. Если дело проиграно — платить не придётся.</li>
+                    <li>Полное представительство клиента. Пострадавшему от недобросовестного застройщика не придётся ничего делать, «Ассоциацияи защиты собственников недвижимости» организует всё: приёмку квартиры на месте, направление досудебной претензии, составление заявления в суд, полное представительство в суде, получение исполнительного листа, взыскание присужденных компенсаций.</li>
+                    <li>Абсолютно безопасно - договор и доверенность, регулирующие взаимодействие компании «Вист Эксперт» с клиентом, исключают любую возможность распоряжения деньгами или имуществом клиента. Доверенность действует только на представление интересов клиента в конкретном процессе</li>
+                    <li>Большой опыт — за 11 лет работы более 3 000 судов с застройщиками, из них 100% выиграно.</li>
+                    <li>Специализация и экспертиза конкретно в узкой сфере строительства: знаем все узкие места в этой отрасли права, все тонкости и все лазейки</li>
+                    <li>5 экспертов-специалистов по приёмке в штате. Помогут выявить строительные недостатки в сданной квартире с использованием специализированного поверенного оборудования.</li>
+                    <li>Репутация и статус: зарегистрированное в Москве юрлицо, офис в «Москва Сити», штат из сотрудников с юридическим образованием</li>
+                </ul>
+
+                <ul class="left-side__digits">
+                    <h3>Межрегиональный департамент строительной экспертизы в цифрах</h3>
+                    <li>
+                        <p>11 лет</p>
+                        <p>опыта в защите прав дольщиков</p>
+                    </li>
+                    <li>
+                        <p>2 филиала</p>
+                        <p>Москва, Воронеж</p>
+                    </li>
+                    <li>
+                        <p>100% дел</p>
+                        <p>выиграно в суде</p>
+                    </li>
+                    <li>
+                        <p>3000+</p>
+                        <p>довольных клиентов</p>
+                    </li>
+                    <li>
+                        <p>56567</p>
+                        <p>Проверенно квартир. Клиент платит только в случае победы в суде</p>
+                    </li>
+                    <li>
+                        <p>270 млн. руб.</p>
+                        <p>мы вернули нашим клиентам</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="right-side">
+            <h1>Приемка квартиры с ремонтом в новостройке за 2900 руб.</h1>
+            <div class="right-side__sale">
+                <div class="sale_title">
+                    <h4>Акция</h4>
+                    <p>Фиксированная стоимость за любой метраж квартиры. Выезд в Москве и МО</p>
+                </div>
+                <div class="sale_image">
+                    <img src="./img/services/article_img.png" alt="">
+                </div>
+            </div>
+
+            <h3>90% квартир в новостройках имеют строительные недостатки</h3>
+            <ul class="right-side__list list1">
+                <li class="list1_item">Поможем правильно принять квартиру в новостройке по специальной цене — 2 900 руб.</li>
+                <li class="list1_item">Цена не зависит от площади квартиры.</li>
+            </ul>
+
+            <h3>С помощью профессионального оборудования проверим:</h3>
+            <ul class="right-side__list list2">
+                <li class="list2_item">Стены</li>
+                <li class="list2_item">Канализацию</li>
+                <li class="list2_item">Пол</li>
+                <li class="list2_item">Водоснабжение</li>
+                <li class="list2_item">Потолок</li>
+                <li class="list2_item">Электрику</li>
+                <li class="list2_item">Вентиляцию</li>
+                <li class="list2_item">Балконы и лоджии</li>
+                <li class="list2_item">Окна и двери</li>
+            </ul>
+
+            <form action="" class="consultation_form form_1">
+                <h3>Контроль качества ремонта в вашей квартире по 350 параметрам</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="submit">
+                    <div class="acceptance">
+                        <input type="checkbox" name="" id="acceptance">
+                        <label for="acceptance" class="checkbox_label"></label>
+                        <label for="acceptance">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="button">Получить консультацию</button>
+                </div>
+            </form>
+
+            <div class="scheme">
+                <img src="./img/services/scheme.png" alt="схема">
+                <li>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_item path">
+                        <circle cx="40" cy="40" r="40" fill="#AFE5FF"/>
+                        <path d="M20 22.25C20 21.9185 20.1317 21.6005 20.3661 21.3661C20.6005 21.1317 20.9185 21 21.25 21H58.75C59.0815 21 59.3995 21.1317 59.6339 21.3661C59.8683 21.6005 60 21.9185 60 22.25V29.75C60 30.0815 59.8683 30.3995 59.6339 30.6339C59.3995 30.8683 59.0815 31 58.75 31H55V36H58.75C59.0815 36 59.3995 36.1317 59.6339 36.3661C59.8683 36.6005 60 36.9185 60 37.25V44.75C60 45.0815 59.8683 45.3995 59.6339 45.6339C59.3995 45.8683 59.0815 46 58.75 46H55V51H58.75C59.0815 51 59.3995 51.1317 59.6339 51.3661C59.8683 51.6005 60 51.9185 60 52.25V59.75C60 60.0815 59.8683 60.3995 59.6339 60.6339C59.3995 60.8683 59.0815 61 58.75 61H21.25C20.9185 61 20.6005 60.8683 20.3661 60.6339C20.1317 60.3995 20 60.0815 20 59.75V52.25C20 51.9185 20.1317 51.6005 20.3661 51.3661C20.6005 51.1317 20.9185 51 21.25 51H25V46H21.25C20.9185 46 20.6005 45.8683 20.3661 45.6339C20.1317 45.3995 20 45.0815 20 44.75V37.25C20 36.9185 20.1317 36.6005 20.3661 36.3661C20.6005 36.1317 20.9185 36 21.25 36H25V31H21.25C20.9185 31 20.6005 30.8683 20.3661 30.6339C20.1317 30.3995 20 30.0815 20 29.75V22.25ZM27.5 31V36H38.75V31H27.5ZM41.25 31V36H52.5V31H41.25ZM27.5 46V51H38.75V46H27.5ZM41.25 46V51H52.5V46H41.25ZM22.5 23.5V28.5H31.25V23.5H22.5ZM33.75 23.5V28.5H46.25V23.5H33.75ZM48.75 23.5V28.5H57.5V23.5H48.75ZM22.5 38.5V43.5H31.25V38.5H22.5ZM33.75 38.5V43.5H46.25V38.5H33.75ZM48.75 38.5V43.5H57.5V38.5H48.75ZM22.5 53.5V58.5H31.25V53.5H22.5ZM33.75 53.5V58.5H46.25V53.5H33.75ZM48.75 53.5V58.5H57.5V53.5H48.75Z" fill="#1F242E"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_item stroke">
+                        <circle cx="40" cy="40" r="40" fill="#AFE5FF"/>
+                        <path d="M39.5556 20C30.9644 20 24 27.2711 24 35.5556V57.7778C24 58.3671 24.2341 58.9324 24.6509 59.3491C25.0676 59.7659 25.6329 60 26.2222 60H52.8889C53.4783 60 54.0435 59.7659 54.4602 59.3491C54.877 58.9324 55.1111 58.3671 55.1111 57.7778V35.5556C55.1111 27.2711 48.1467 20 39.5556 20Z" stroke="#1F242E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M24 42.2219H55.1111" stroke="#1F242E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M39.5547 20V60" stroke="#1F242E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_item stroke">
+                        <circle cx="40" cy="40" r="40" fill="#AFE5FF"/>
+                        <path d="M34.5455 40C27.2727 34.5455 25.4545 27.2727 25.4545 27.2727M40 45.4545C41.4466 45.4545 42.834 44.8799 43.8569 43.8569C44.8799 42.834 45.4545 41.4466 45.4545 40C45.4545 38.5534 44.8799 37.166 43.8569 36.1431C42.834 35.1201 41.4466 34.5455 40 34.5455C38.5534 34.5455 37.166 35.1201 36.1431 36.1431C35.1201 37.166 34.5455 38.5534 34.5455 40C34.5455 41.4466 35.1201 42.834 36.1431 43.8569C37.166 44.8799 38.5534 45.4545 40 45.4545V45.4545ZM45.4545 40C52.7273 45.4545 54.5455 52.7273 54.5455 52.7273L45.4545 40ZM40 60C51.0455 60 60 51.0455 60 40C60 28.9545 51.0455 20 40 20C28.9545 20 20 28.9545 20 40C20 51.0455 28.9545 60 40 60ZM40 34.5455C45.4545 25.4545 52.7273 23.6364 52.7273 23.6364L40 34.5455ZM40 45.4545C34.5455 52.7273 27.2727 54.5455 27.2727 54.5455L40 45.4545Z" stroke="#1F242E" stroke-width="2"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_item path">
+                        <circle cx="40" cy="40" r="40" fill="#AFE5FF"/>
+                        <path d="M32.4865 20C31.9252 20 31.3869 20.223 30.99 20.6199C30.5931 21.0168 30.3701 21.5551 30.3701 22.1164C30.3701 22.6777 30.5931 23.216 30.99 23.6129C31.3869 24.0098 31.9252 24.2328 32.4865 24.2328H52.7828L33.2061 43.8095C32.9845 43.9993 32.8046 44.2327 32.6776 44.4953C32.5505 44.7579 32.4792 45.0439 32.4679 45.3353C32.4566 45.6268 32.5058 45.9175 32.6122 46.189C32.7186 46.4606 32.8799 46.7073 33.0862 46.9135C33.2925 47.1198 33.5391 47.2812 33.8107 47.3876C34.0823 47.494 34.3729 47.5431 34.6644 47.5318C34.9559 47.5206 35.2419 47.4492 35.5044 47.3222C35.767 47.1951 36.0005 47.0152 36.1902 46.7937L55.7669 27.2169V47.5132C55.7669 48.0745 55.9899 48.6129 56.3868 49.0098C56.7837 49.4067 57.322 49.6296 57.8833 49.6296C58.4447 49.6296 58.983 49.4067 59.3799 49.0098C59.7768 48.6129 59.9997 48.0745 59.9997 47.5132V20H32.4865Z" fill="#1F242E"/>
+                        <path d="M20 32.4868C20 31.9255 20.223 31.3871 20.6199 30.9902C21.0168 30.5933 21.5551 30.3704 22.1164 30.3704C22.6777 30.3704 23.216 30.5933 23.6129 30.9902C24.0098 31.3871 24.2328 31.9255 24.2328 32.4868V52.7831L43.8095 33.2063C43.9993 32.9848 44.2327 32.8049 44.4953 32.6778C44.7579 32.5508 45.0439 32.4794 45.3353 32.4681C45.6268 32.4569 45.9175 32.506 46.189 32.6124C46.4606 32.7188 46.7073 32.8802 46.9135 33.0864C47.1198 33.2927 47.2812 33.5394 47.3876 33.8109C47.494 34.0825 47.5431 34.3732 47.5318 34.6647C47.5206 34.9561 47.4492 35.2421 47.3222 35.5047C47.1951 35.7673 47.0152 36.0007 46.7937 36.1905L27.2169 55.7672H47.5132C48.0745 55.7672 48.6129 55.9902 49.0098 56.3871C49.4067 56.784 49.6296 57.3223 49.6296 57.8836C49.6296 58.4449 49.4067 58.9832 49.0098 59.3801C48.6129 59.777 48.0745 60 47.5132 60H20V32.4868Z" fill="#1F242E"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_item path">
+                        <circle cx="40" cy="40" r="40" fill="#AFE5FF"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M37.5714 20H34.7143V28.5714H30.4286L29 30V40C28.9997 42.7838 30.0156 45.472 31.8568 47.56C33.698 49.6479 36.238 50.992 39 51.34V60H41.8571V51.34C44.6191 50.992 47.1591 49.6479 49.0004 47.56C50.8416 45.472 51.8574 42.7838 51.8571 40V30L50.4286 28.5714H46.1429V20H43.2857V28.5714H37.5714V20ZM46.4886 46.06C45.2898 47.2584 43.7627 48.0744 42.1003 48.405C40.4378 48.7356 38.7147 48.5658 37.1487 47.9172C35.5827 47.2686 34.2441 46.1703 33.3023 44.7611C32.3604 43.3518 31.8575 41.695 31.8571 40V31.4286H49V40C48.9995 42.2731 48.0961 44.4529 46.4886 46.06Z" fill="#1F242E"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_item path">
+                        <circle cx="40" cy="40" r="40" fill="#AFE5FF"/>
+                        <path d="M56.8011 22.5191C56.1966 21.7326 55.4189 21.0961 54.5284 20.6592C53.6379 20.2223 52.6586 19.9967 51.6666 20H50.6349L45.9682 38H21V40.6667C21 44.5402 22.5513 48.0104 25.3681 50.4381C28.0333 52.735 31.6907 54 35.6667 54H38.8437L38.177 60H55V39.5034L57.9509 28.1213C58.203 27.162 58.2304 26.1574 58.031 25.1858C57.8316 24.2141 57.4107 23.3016 56.8011 22.5191ZM52.3333 57.3333H41.1563L41.823 51.3333H35.6667C28.6012 51.3333 23.6667 46.947 23.6667 40.6667H52.3333V57.3333ZM55.3696 27.452L52.6349 38H48.7231L52.6647 22.797C53.6375 23.0608 54.467 23.6975 54.9734 24.5689C55.4798 25.4403 55.6222 26.4763 55.3697 27.452H55.3696Z" fill="#1F242E"/>
+                    </svg>                        
+                </li>
+                <li>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_item stroke">
+                        <circle cx="40" cy="40" r="40" fill="#AFE5FF"/>
+                        <path d="M31 34V46M40 27V53V27ZM49 20V60V20ZM22 27V53V27ZM58 31V49V31Z" stroke="#1F242E" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </li>
+
+                <ul class="scheme__description">
+                    <li class="description_item" style="display: none;">
+                        <h3>Стены</h3>
+                        <p>С помощью профессионального оборудования проверим...</p>
+                    </li>
+                    <li class="description_item" style="display: none;">
+                        <h3>Окна и двери</h3>
+                        <p>С помощью профессионального оборудования проверим...</p>
+                    </li>
+                    <li class="description_item" style="display: none;">
+                        <h3>Вентиляция</h3>
+                        <p>С помощью профессионального оборудования проверим...</p>
+                    </li>
+                    <li class="description_item" style="display: none;">
+                        <h3>Потолок и пол</h3>
+                        <p>С помощью профессионального оборудования проверим...</p>
+                    </li>
+                    <li class="description_item" style="display: none;">
+                        <h3>Электрика</h3>
+                        <p>С помощью профессионального оборудования проверим...</p>
+                    </li>
+                    <li class="description_item" style="display: none;">
+                        <h3>Канализация</h3>
+                        <p>С помощью профессионального оборудования проверим...</p>
+                    </li>
+                    <li class="description_item" style="display: none;">
+                        <h3>Излучение материалов</h3>
+                        <p>С помощью профессионального оборудования проверим...</p>
+                    </li>
+                </ul>
+            </div>
+
+            <form action="" class="consultation_form form_2">
+                <h3>Юридически верно заполним дефектовочный акт и отразим все выявленные недостатки. А также составим смету на устранение выявленных недостатков.</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="submit">
+                    <div class="acceptance">
+                        <input type="checkbox" name="" id="acceptance_2">
+                        <label for="acceptance_2" class="checkbox_label"></label>
+                        <label for="acceptance_2">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="button">Получить консультацию</button>
+                </div>
+            </form>
+
+            <h3>После приёмки квартиры предлагаем вам 3 варианта взаимодействия с застройщиком</h3>
+            <ul class="right-side__list list3">
+                <li>
+                    <h4>Приемка квартиры</h4>
+                    <p>При отсутствии существенных недостатков, препятствующих приемке квартиры и проживанию в квартире, квартиру стоит принять, а разбираться с недостатками качества в течение гарантийного срока 5 лет </p>
+                </li>
+                <li>
+                    <h4>Досудебное урегулирование</h4>
+                    <p>В некоторых случаях застройщик согласен на выплату неустойки уже после получения грамотно составленной претензии. Мы самостоятельно собираем все необходимые документы, подготавливаем и отправляем застройщику официальную претензию</p>
+                </li>
+                <li>
+                    <h4>Получение денежной компенсации в судебном порядке</h4>
+                    <p>При заключении договора вы не платите за приемку квартиры ни рубля. Оплата за взыскание компенсации производится только после поступления денежных средств от застройщика на ваш счёт. 700.000 рублей Средний размер неустойки взясканоной в судебном порядке</p>
+                </li>
+            </ul>
+            
+            <form action="" class="consultation_form form_3">
+                <h3>Доверьте профессионалам выявление строительных недостатков</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="submit">
+                    <div class="acceptance">
+                        <input type="checkbox" name="" id="acceptance_3">
+                        <label for="acceptance_3" class="checkbox_label"></label>
+                        <label for="acceptance_3">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="button">Получить консультацию</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__top _container">
+            <div class="footer__text">
+                <p>Приглашаем к нам в офис на бесплатную консультацию</p>
+                <address>
+                    <h3>Москва, Пресненская набережная 2, 7 этаж, офис 722</h3>
+                    <p>Ежедневно с 10:00 до 20:00</p> 
+                </address>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+            <div class="footer__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b304d0ad71186cc41c9428a3e5732312d154c058d1f530b68991680247b5180&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>            
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="_container">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img src="./img/logo_foot.svg" alt="Логотип компании">
+                    </div>
+                    <a href="tel:+1234567890" style="display: block;">8 800 300 20 30</a>
+                </div>
+                <div class="footer__connection">
+                    <p>Написать в Whatsapp</p>
+                    <p onclick="ShowModal()">Бесплатная консультация</p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK_white.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook_white.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram_white.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube_white.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <script src="./js/general_script.js"></script>
+    <script src="./js/svg_switch.js"></script>
+</body>
+</html>

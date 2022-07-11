@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги. Нарушение сроков</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/services.css">
+</head>
+<body>
+    <div class="modal_overlay" id="overlay" style="display: none;">
+        <form class="modal_window" id="modal">
+            <h3>Бесплатная консультация</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="modal_submit">
+                    <div class="modal_acceptance">
+                        <input type="checkbox" name="" id="modal_acceptance">
+                        <label for="modal_acceptance" class="checkbox_label"></label>
+                        <label for="acceptance">Я согласен на обработку <br> персональных данных</label>
+                    </div>
+                    <button type="button" class="modal_button">Получить консультацию</button>
+                </div>
+        </form>
+    </div>
+    <header class="header">
+        <div class="header__burger_menu" id="burger_menu">
+                <ul class="burger_navigation" id="burger_nav">
+                    <li><a href="./about.html">О департаменте</a></li>
+                    <li><a href="./media.html">СМИ</a></li>
+                    <li><a href="./practice.html">Практика</a></li>
+                    <li><a href="./services_1.html">Услуги</a></li>
+                    <li><a href="./articles.html">Статьи</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+        </div>
+        <div class="header__top">
+            <div class="_container">
+                <div class="header__title">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/Logo.svg" alt="Логотип компании" height="100%" width="100%"></a>
+                    </div>
+                    <p>Межрегиональный департамент <br> строительной экспертизы</p>
+                </div>
+                <div class="header__connection">
+                    <div class="connection_buttons">
+                        <p>Написать в Whatsapp</p>
+                        <p onclick="ShowModal()">Бесплатная консультация</p>
+                    </div>
+                    <a href="#">8 800 300 20 30</a>
+                </div>
+                <div class="burger">
+                    <img src="./img/burger.svg" alt="меню" id="burger">
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="_container">
+                <nav class="nav">
+                    <a href="./about.html">О департаменте</a>
+                    <a href="./media.html">СМИ</a>
+                    <a href="./practice.html">Практика</a>
+                    <a href="./services_1.html">Услуги</a>
+                    <a href="./articles.html">Статьи</a>
+                    <a href="./contacts.html">Контакты</a>
+                </nav>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main _container _first-block">
+        <section class="left-side">
+            <div class="left-side-wrapper">
+                <h3>Услуги</h3>
+                <a href="./services_1.html" class="links">Приемка квартиры с ремонтом в новостройке</a>
+                <a href="./services_2.html" class="links">Получение денежной компенсации на исправление строительных недостатков	</a>
+                <a href="./services_3.html"class='links disabled'>Нарушение сроков сдачи квартиры по договору ДДУ</a>
+
+                <ul class="left-side__block1">
+                    <h3>7 причин доверить решение споров с застройщиком Ассоциацияи защиты собственников недвижимости</h3>
+                    <li>Без предоплаты. Мы работаем за комиссию с выплат застройщика по исполнительному листу (когда вам судом УЖЕ присуждена компенсация). Мы получаем свои деньги только в случае вашей победы. Если дело проиграно — платить не придётся.</li>
+                    <li>Полное представительство клиента. Пострадавшему от недобросовестного застройщика не придётся ничего делать, «Ассоциацияи защиты собственников недвижимости» организует всё: приёмку квартиры на месте, направление досудебной претензии, составление заявления в суд, полное представительство в суде, получение исполнительного листа, взыскание присужденных компенсаций.</li>
+                    <li>Абсолютно безопасно - договор и доверенность, регулирующие взаимодействие компании «Вист Эксперт» с клиентом, исключают любую возможность распоряжения деньгами или имуществом клиента. Доверенность действует только на представление интересов клиента в конкретном процессе</li>
+                    <li>Большой опыт — за 11 лет работы более 3 000 судов с застройщиками, из них 100% выиграно.</li>
+                    <li>Специализация и экспертиза конкретно в узкой сфере строительства: знаем все узкие места в этой отрасли права, все тонкости и все лазейки</li>
+                    <li>5 экспертов-специалистов по приёмке в штате. Помогут выявить строительные недостатки в сданной квартире с использованием специализированного поверенного оборудования.</li>
+                    <li>Репутация и статус: зарегистрированное в Москве юрлицо, офис в «Москва Сити», штат из сотрудников с юридическим образованием</li>
+                </ul>
+
+                <ul class="left-side__digits">
+                    <h3>Межрегиональный департамент строительной экспертизы в цифрах</h3>
+                    <li>
+                        <p>11 лет</p>
+                        <p>опыта в защите прав дольщиков</p>
+                    </li>
+                    <li>
+                        <p>2 филиала</p>
+                        <p>Москва, Воронеж</p>
+                    </li>
+                    <li>
+                        <p>100% дел</p>
+                        <p>выиграно в суде</p>
+                    </li>
+                    <li>
+                        <p>3000+</p>
+                        <p>довольных клиентов</p>
+                    </li>
+                    <li>
+                        <p>56567</p>
+                        <p>Проверенно квартир. Клиент платит только в случае победы в суде</p>
+                    </li>
+                    <li>
+                        <p>270 млн. руб.</p>
+                        <p>мы вернули нашим клиентам</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="right-side">
+            <h1>Взыщем неустойку с застройщика за нарушение срока передачи квартиры</h1>
+
+            <form action="" class="consultation_form form_4">
+                <h3>Взыщем от 500 000 руб. в судебном порядке</h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="submit">
+                    <div class="acceptance">
+                        <input type="checkbox" name="" id="acceptance_4">
+                        <label for="acceptance_4" class="checkbox_label"></label>
+                        <label for="acceptance">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="button">Получить консультацию</button>
+                </div>
+            </form>
+
+
+            <ul class="right-side__list list3 list_block_1">
+                <li>
+                    <h4>Допсоглашение — не подписывать</h4>
+                    <p>
+                        По закону любой застройщик может предложить вам дополнительное соглашение о переносе сроков — то есть предложить вам изменить договор. Если застройщик понимает, что не успеет достроить дом в срок, то не позднее чем за 2 месяца до истечения срока обязан вам об этом сообщить и у него есть право передоговориться с вами на новые сроки. <br><br>
+                        У вас есть право не передоговариваться.
+                    </p>
+                </li>
+                <li>
+                    <h4>Оценить шансы на сдачу</h4>
+                    <p>
+                        Посмотрите, какой срок переноса хотел получить застройщик, когда предлагал вам подписать допсоглашение. Если это срок до года, то шансов на сдачу больше (так считает наш юрист-консультант). <br><br>
+                        Если срок больше года, то может случиться так, что застройщик не достроит дом и не сдаст его.
+                    </p>
+                </li>
+                <li>
+                    <h4>Дождаться сдачи</h4>
+                    <p>
+                        Дождаться сдачи дома, продать квартиру или расторгнуть договор с застройщиком <br><br>
+                        Преимущества. Меньше юридических хлопот. <br><br>
+                        Риски. Долго ждать. Если застройщик обанкротится, судьба объекта туманна
+                    </p>
+                </li>
+            </ul>
+
+            <form action="" class="consultation_form form_2">
+                <h3>Решение: получить квалифицированную, бесплатную помощь 
+                    <p>Проведем анализ</p>
+                    <p>Оценим все риски</p>
+                    <p>Предложим оптимальное решение</p>
+                </h3>
+                <input type="text" placeholder="Имя" class="input"><br>
+                <input type="tel" placeholder="Телефон" class="input">
+                <div class="submit">
+                    <div class="acceptance">
+                        <input type="checkbox" name="" id="acceptance_2">
+                        <label for="acceptance_2" class="checkbox_label"></label>
+                        <label for="acceptance_2">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="button">Получить консультацию</button>
+                </div>
+            </form>
+            
+            <h3>Факты о неустойке за просрочку передачи квартиры застройщиком по ДДУ (214-ФЗ)</h3>
+            <ul class="right-side__list list4">
+                <li>
+                   <h3>Неустойку можно взыскать за просрочку передачи квартиры или иного объекта</h3> 
+                    В ДДУ обычно указано 2 срока: срок ввода в эксплуатацию и срок передачи объекта по ДДУ; за нарушение первого срока отсутствует ответственность застройщика, за нарушение второго срока можно взыскать указанную выше неустойку. Поэтому внимательно почитайте ДДУ и определите срок передачи объекта по ДДУ.
+                </li>
+                <li>
+                    <h3>Неустойку можно взыскать за просрочку передачи квартиры или иного объекта</h3> 
+                     В ДДУ обычно указано 2 срока: срок ввода в эксплуатацию и срок передачи объекта по ДДУ; за нарушение первого срока отсутствует ответственность застройщика, за нарушение второго срока можно взыскать указанную выше неустойку. Поэтому внимательно почитайте ДДУ и определите срок передачи объекта по ДДУ.
+                 </li>
+                 <li>
+                    <h3>Неустойку можно взыскать за просрочку передачи квартиры или иного объекта</h3> 
+                     В ДДУ обычно указано 2 срока: срок ввода в эксплуатацию и срок передачи объекта по ДДУ; за нарушение первого срока отсутствует ответственность застройщика, за нарушение второго срока можно взыскать указанную выше неустойку. Поэтому внимательно почитайте ДДУ и определите срок передачи объекта по ДДУ.
+                 </li>
+                 <li>
+                    <h3>Неустойку можно взыскать за просрочку передачи квартиры или иного объекта</h3> 
+                     В ДДУ обычно указано 2 срока: срок ввода в эксплуатацию и срок передачи объекта по ДДУ; за нарушение первого срока отсутствует ответственность застройщика, за нарушение второго срока можно взыскать указанную выше неустойку. Поэтому внимательно почитайте ДДУ и определите срок передачи объекта по ДДУ.
+                 </li>
+                 <li>
+                    <h3>Неустойку можно взыскать за просрочку передачи квартиры или иного объекта</h3> 
+                     В ДДУ обычно указано 2 срока: срок ввода в эксплуатацию и срок передачи объекта по ДДУ; за нарушение первого срока отсутствует ответственность застройщика, за нарушение второго срока можно взыскать указанную выше неустойку. Поэтому внимательно почитайте ДДУ и определите срок передачи объекта по ДДУ.
+                 </li>
+                 <li>
+                    <h3>Неустойку можно взыскать за просрочку передачи квартиры или иного объекта</h3> 
+                     В ДДУ обычно указано 2 срока: срок ввода в эксплуатацию и срок передачи объекта по ДДУ; за нарушение первого срока отсутствует ответственность застройщика, за нарушение второго срока можно взыскать указанную выше неустойку. Поэтому внимательно почитайте ДДУ и определите срок передачи объекта по ДДУ.
+                 </li>
+            </ul>
+
+            <form action="" class="consultation_form form_3">
+                <h3>Расчет неустойки за просрочку сдачи квартиры</h3>
+                <div class="inputs">
+                    <input type="text" placeholder="Название ЖК" class="input">
+                    <input type="text" placeholder="Имя" class="input">
+                    <input type="text" placeholder="Наименование застройщика" class="input">
+                    <input type="tel" placeholder="Телефон" class="input">
+                    <input type="text" placeholder="Срок просрочки" class="input">
+                </div>
+                
+                <div class="submit">
+                    <div class="acceptance">
+                        <input type="checkbox" name="" id="acceptance_3">
+                        <label for="acceptance_3" class="checkbox_label"></label>
+                        <label for="acceptance_3">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="button">Получить консультацию</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__top _container">
+            <div class="footer__text">
+                <p>Приглашаем к нам в офис на бесплатную консультацию</p>
+                <address>
+                    <h3>Москва, Пресненская набережная 2, 7 этаж, офис 722</h3>
+                    <p>Ежедневно с 10:00 до 20:00</p> 
+                </address>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+            <div class="footer__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b304d0ad71186cc41c9428a3e5732312d154c058d1f530b68991680247b5180&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>            
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="_container">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img src="./img/logo_foot.svg" alt="Логотип компании">
+                    </div>
+                    <a href="tel:+1234567890" style="display: block;">8 800 300 20 30</a>
+                </div>
+                <div class="footer__connection">
+                    <p>Написать в Whatsapp</p>
+                    <p onclick="ShowModal()">Бесплатная консультация</p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./img/VK_white.svg" alt="VK" height="100%"></a>
+                    <a href="#"><img src="./img/Facebook_white.svg" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="./img/Instagram_white.svg" alt="Instagram" height="100%"></a>
+                    <a href="#"><img src="./img/Youtube_white.svg" alt="Youtube" height="100%"></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <script src="./js/general_script.js"></script>
+    <script src="./js/svg_switch.js"></script>
+</body>
+</html>
