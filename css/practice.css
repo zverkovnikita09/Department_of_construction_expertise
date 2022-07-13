@@ -7,20 +7,24 @@
 }
 .main{
     display: grid;
-    width: 100%;
-    grid-template-columns: 5fr 7fr;
-    grid-column-gap: 60px;
-    margin-bottom: var(--mainMargin);
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 70px;
 }
 .practice_sidebar{
-    border-right: 2px solid #D2D6DF;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-right: 1px solid #D2D6DF;
+}
+.practice_sidebar__links{
+    grid-column: 1/4;
 }
 .practice_sidebar__links h2{
     color: var(--small-text-collor);
     font-size: 1.5rem;
 }
 .practice_sidebar__links a{
-    display: inline-block;
+    display: block;
     border-bottom: 1px solid #D2D6DF;
     font-size: 1.75rem;
     padding: var(--mainPadding);
@@ -36,7 +40,7 @@ a.disabled{
     pointer-events: none;
 }
 .apartements {
-    margin: 0 auto;
+    grid-column: 6/13;
 }
 .apartements h1{
     font-size: 2.5rem;
@@ -117,9 +121,4 @@ a.disabled{
 }
 .pages a:first-child:hover, .pages a:last-child:hover{
     text-decoration: none;
-}
-@media (max-width: 1475px){
-    html{
-        font-size: 12px;
-    }
 }

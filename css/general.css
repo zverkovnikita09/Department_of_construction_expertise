@@ -17,11 +17,6 @@ body a{
     color: #1F242E;
     font-family: inherit;
 }
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 ul{
     list-style: none;
 }
@@ -74,15 +69,14 @@ input[type='checkbox']:checked + label.checkbox_label:hover{
     position: fixed;
     transform: translateY(-150px);
     transition: transform 0.2s, background-color 0.05s;
+    padding: 40px;
+    border: 1px solid #D2D6DF;
+    border-top: 10px solid #AFE5FF;
+    box-sizing: border-box;
 }
 .modal_window.active{
     background-color: rgb(255, 255, 255, 1);
     transform: translateY(0);
-}
-.modal_window{
-    padding: 40px;
-    border: 1px solid #D2D6DF;
-    border-top: 10px solid #AFE5FF;
 }
 .modal_window h3{
     font-size: 2.25rem;
@@ -120,13 +114,40 @@ input[type='checkbox']:checked + label.checkbox_label:hover{
 .modal_button:hover{
     background-color: #75D2FF;
 }
+/*Form sent*/
 .form__approve{
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 20%;
+    height: 100%;
+    width: 100%;
+}
+.form__approve h2{
+    font-size: 2.25rem;
+}
+.form__approve p{
+    font-size: 1rem;
+    color: #6C717B;
+    line-height: 1.5rem;
 }
 .approve__button{
     margin: 0 auto;
 }
+
+@media (max-width: 1550px){
+    html{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1280px){
+    html{
+        font-size: 12px;
+    }
+}
+/* @media (max-width: 1475px){
+    html{
+        font-size: 12px;
+    }
+} */
