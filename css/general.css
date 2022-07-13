@@ -146,8 +146,3 @@ input[type='checkbox']:checked + label.checkbox_label:hover{
         font-size: 12px;
     }
 }
-/* @media (max-width: 1475px){
-    html{
-        font-size: 12px;
-    }
-} */
