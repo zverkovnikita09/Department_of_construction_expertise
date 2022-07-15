@@ -63,7 +63,7 @@ a {
     display: none;
     min-height: calc(100vh - var(--headerHeight));
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: var(--headerHeight);
     z-index: 7;
     background-color: rgb(46, 46, 46, 0.8);
@@ -240,6 +240,8 @@ a {
     .footer__map{
         height: 300px;
         margin-top: 40px;
+    }
+    .footer__map iframe{
         pointer-events: none;
     }
     .footer__bottom>._container{
@@ -268,6 +270,13 @@ a {
     }
 }
 @media(max-width:970px){
+    .header{
+        position: sticky;
+        top: 0;
+        right: 0;
+        z-index: 500;
+        width: 100%;
+    }
     .burger{
         display: block;
         width: 45px;

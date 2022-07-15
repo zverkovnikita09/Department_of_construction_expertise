@@ -95,7 +95,6 @@
     .address{
         align-items: flex-start;
         flex-direction: column;
-        gap: 20px;
         padding: 0 20px;
     }
     .Moscow-item{
