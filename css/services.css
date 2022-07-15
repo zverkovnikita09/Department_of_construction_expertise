@@ -397,4 +397,8 @@ svg.path._active path{
     .left-side__digits{
         padding-left: 0;
     }
+    .list2{
+        display: flex;
+        flex-direction: column;
+    }
 }
