@@ -78,8 +78,3 @@
 .article h3:hover{
     text-decoration: underline;
 }
-@media (max-width: 1475px){
-    html{
-        font-size: 12px;
-    }
-}

@@ -303,3 +303,98 @@ svg.path._active path{
 .form_4{
     margin-top: 67px;
 }
+.mobile_nav{
+    display: none;
+    background-color: #EDEFF2;
+}
+@media (max-width: 1100px) {
+    .list2{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .list3{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .consultation_form h3{
+        font-size: 1.75rem;
+    }
+    .submit{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .button{
+        width: 100%;
+    }
+}
+@media (max-width: 850px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .mobile_nav{
+        display: block;
+    }
+    .left-side{
+        border: none;
+        display: block;
+    }
+    .left-side-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .left-side-wrapper>.links, .left-side-wrapper>h3{
+        display: none;
+    }
+    .left-side__block1, .left-side__digits{
+        margin-top: 0;
+    }
+    .left-side__block1{
+        padding-right: 30px;
+        border-right: 1px solid #D2D6DF;
+    }
+    .left-side__digits{
+        padding-left: 30px;
+    }
+    .links:last-child{
+        border: none;
+    }
+    .left-side__digits>h3{
+        text-align: center;
+    }
+    .left-side{
+        margin-top: 40px;
+        order: 1;
+    }
+    .list3{
+        display: none;
+    }
+    .switch__block_item:nth-child(n){
+        display: block !important;
+        margin-top: 20px;
+        background-color: #EDEFF2;
+        padding: 20px;
+    }
+}
+@media(max-width:450px){
+    .scheme{
+        display: none;
+    }
+    .form_2{
+        display: none;
+    }
+    .left-side-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .left-side__block1{
+        padding-right: 30;
+        border-right: none;
+    }
+    .left-side__digits{
+        padding-left: 0;
+    }
+}

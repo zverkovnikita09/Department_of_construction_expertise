@@ -9,7 +9,9 @@ a {
 .icons>a:hover{
     transform: scale(1.1);
 }
-
+:root{
+    --headerHeight: 100px;
+}
 
 /*Header*/
 .header__top{
@@ -59,10 +61,10 @@ a {
 }
 .header__burger_menu{
     display: none;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - var(--headerHeight));
     width: 100%;
     position: absolute;
-    top: 100px;
+    top: var(--headerHeight);
     z-index: 7;
     background-color: rgb(46, 46, 46, 0.8);
     overflow: hidden;
@@ -213,16 +215,52 @@ a {
         padding-bottom: 80px;
     }
     .header__top{
-        height: 100px;
+        height: var(--headerHeight);
     }
     .footer__bottom {
         height: 80px;
     }
 }
+@media (max-width:1120px) {
+    .footer__info > a{
+        font-size: 1.5rem;
+    }
+    .footer__text {
+        padding-bottom: 0;
+    }
+    .footer__top{
+        display: block;
+    }
+    .footer__bottom {
+        position: relative;
+    }
+    .footer__top._container{
+        max-width: 100%;
+    }
+    .footer__map{
+        height: 300px;
+    }
+    .footer__bottom>._container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__info > a{
+        font-size: 2.5rem;
+    }
+    .footer__connection{
+        display: flex;
+        gap: 20px;
+        font-size: 1.25rem;
+    }
+    .footer__text{
+        max-width: calc(100vw/1.1);
+        margin: 0 auto;
+    }
+}
 @media(max-width:970px){
     .burger{
         display: block;
-        width: 3.125em;
+        width: 45px;
         cursor: pointer;
     }
     .header__connection{
@@ -230,6 +268,34 @@ a {
     }
     .header__bottom{
         display: none;
+    }
+}
+@media(max-width:490px){
+    :root{
+        --headerHeight: 80px;
+    }
+    .header__title p{
+        font-size: 1.25rem;
+    }
+    .header__title .logo{
+        width: 35px;
+    }
+    .burger{
+        width: 35px;
+    }
+}
+@media(max-width:360px){
+    :root{
+        --headerHeight: 60px;
+    }
+    .header__title p{
+        font-size: 1rem;
+    }
+    .header__title .logo{
+        width: 26px;
+    }
+    .burger{
+        width: 26px;
     }
 }
 

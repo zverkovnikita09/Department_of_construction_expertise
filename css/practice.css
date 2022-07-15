@@ -48,7 +48,7 @@ a.disabled{
 }
 .apartments__list{
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 405px));
+    grid-template-columns: repeat(2, minmax(300px, 450px));
     grid-auto-rows: 1fr;
     grid-gap: 20px;
     animation: appearance 1s;
@@ -62,16 +62,20 @@ a.disabled{
     }
 }
 .apartements__card{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     background-color: #EDEFF2;
 }
 .apartements__img img{
     height: 100%;
-    width: 122px;
+    object-fit: cover;
+}
+.court__img{
+    min-height: 150px;
 }
 .court__img img{
     height: 100%;
-    width: 170px;
+    object-fit: cover;
 }
 .apartements_description{
     padding: 15px 20px;
@@ -97,6 +101,7 @@ a.disabled{
 }
 .description_court p:first-child{
     font-size: 2.25rem;
+    margin-top: 30px;
 }
 .description_court p:last-child{
     font-size: 0.75rem;
@@ -121,4 +126,92 @@ a.disabled{
 }
 .pages a:first-child:hover, .pages a:last-child:hover{
     text-decoration: none;
+}
+@media(max-width: 1220px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .apartements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .apartements h1{
+        display: none;
+    }
+    .apartments__list{
+        margin-top: 40px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .court__img{
+        min-height: 100px;
+    }
+    .apartements__card{
+        grid-template-columns: 1fr 3fr;
+    }
+    .apartements_description h3{
+        font-size: 1.9rem;
+    }
+    .description_court p:first-child{
+        font-size: 2.5rem;
+    }
+    .practice_sidebar{
+        display: block;
+        border: none;
+    }
+    .pages{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 970px){
+    .main{
+        margin-top: 0;
+    }
+    .main h2{
+        display: none;
+    }
+    .apartments__list{
+        margin-top: 0px;
+    }
+}
+@media(max-width: 800px){
+    .apartements_description h3{
+        font-size: 1.5rem;
+    }
+    .description_court p:first-child{
+        font-size: 2rem;
+    }
+}
+@media(max-width: 660px){
+    .apartments__list{
+        grid-template-columns: none;
+        grid-template-rows: repeat(6,1fr);
+    }
+    .apartements__card:nth-child(n+7){
+        display: none;
+    }
+    .apartements_description h3 {
+        font-size: 2.25rem;
+    }
+    .description_court p:first-child {
+        font-size: 2.9rem;
+    }
+}
+@media(max-width: 350px){
+    .apartements_description h3 {
+        font-size: 1.8rem;
+    }
+    .description_court p:first-child {
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 420px){
+    .apartements_description h3 {
+        font-size: 1.5rem;
+    }
+    .description_court p:first-child {
+        font-size: 2.5rem;
+    }
 }

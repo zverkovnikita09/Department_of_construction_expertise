@@ -138,7 +138,7 @@ input[type='checkbox']:checked + label.checkbox_label:hover{
 
 @media (max-width: 1550px){
     html{
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 @media (max-width: 1280px){
