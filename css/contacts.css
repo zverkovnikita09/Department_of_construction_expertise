@@ -27,11 +27,7 @@
     align-items: center;
 }
 .address_item{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-.address_item__wrapper{
-    grid-column: 2/5;
+    display: block;
 }
 .address img{
     height: 100%;
@@ -53,4 +49,60 @@
 }
 .Voronezh-item{
     display: none;
+}
+@media(max-width:970px){
+    .address h3{
+        font-size: 1.75rem;
+    }
+}
+@media (max-width:895px) {
+    .address img{
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .wrapper{
+        display: block;
+    }
+    .address img{
+        display: block;
+    }
+    .address{
+        justify-content: space-between;
+    }
+    .target{
+        pointer-events: none;
+        width: 5%;
+        min-width: 25px;
+    }
+    .Moscow{
+        left: 45.8%;
+        top: 9.5%;
+    }
+    .Voronezh{
+        left: 51.3%;
+        bottom: 25.7%;
+    }
+    .address_item{
+        display: block !important;
+        padding: 30px 20px 30px 50px;
+    }
+    .map_img{
+        min-height: 200px;
+    }
+}
+@media (max-width: 440px) {
+    .address{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .Moscow-item{
+        border-bottom: 1px solid #D2D6DF;
+    }
+    .address_item{
+        box-sizing: border-box;
+        width: 100%;
+    }
 }

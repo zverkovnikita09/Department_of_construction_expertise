@@ -240,6 +240,7 @@ a {
     .footer__map{
         height: 300px;
         margin-top: 40px;
+        pointer-events: none;
     }
     .footer__bottom>._container{
         display: flex;
