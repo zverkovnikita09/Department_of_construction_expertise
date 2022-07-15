@@ -368,7 +368,7 @@ svg.path._active path{
         margin-top: 40px;
         order: 1;
     }
-    .list3{
+    .switch_list {
         display: none;
     }
     .switch__block_item:nth-child(n){

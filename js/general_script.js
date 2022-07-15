@@ -67,8 +67,6 @@ const modal_button = document.querySelector('.modal_button');
 modal_button.onclick = () =>{
     let width = modal.clientWidth + 'px';
     let height = modal.clientHeight +'px';
-    console.log(width)
-    console.log(height)
     modal.innerHTML = '<div class="form__approve"><h2>Спасибо за обращение!</h2><p>В ближайшее время мы вам позвоним, чтобы провести консультацию. Пожалуйста, подождите звонка нашего консультанта.</p><button type="button" onclick="CloseModal();" class="approve__button modal_button">Закрыть</button></div>';
     modal.style.width = width;
     modal.style.height = height;

@@ -146,3 +146,23 @@ input[type='checkbox']:checked + label.checkbox_label:hover{
         font-size: 12px;
     }
 }
+@media (max-width: 490px) {
+    .modal_submit{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .modal_button{
+        width: 100%;
+    }
+    .modal_window{
+        padding: 20px;
+    }
+    .modal_window h3{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 350px) {
+    .modal_window h3{
+        font-size: 1.75rem;
+    }
+}
