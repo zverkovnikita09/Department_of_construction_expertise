@@ -54,6 +54,9 @@
     .address h3{
         font-size: 1.75rem;
     }
+    .target{
+        width: 3%;
+    }
 }
 @media (max-width:895px) {
     .address img{

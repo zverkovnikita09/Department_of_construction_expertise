@@ -78,3 +78,45 @@
 .article h3:hover{
     text-decoration: underline;
 }
+@media (max-width:1260px) {
+    .article_text h3{
+        font-size: 1.75rem;
+        line-height:normal;
+    }
+    .article_1{
+        display: block;
+        border-bottom: 1px solid #D2D6DF;
+        padding-bottom: 40px;
+    }
+    .article_text{
+        margin-top: 40px;
+    }
+}
+@media (max-width:835px) {
+    .main{
+        margin-top: 0;
+        margin-bottom: 30px;
+        display: block;
+    }
+    .sidebar__wrapper{
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+    }
+    .sidebar__wrapper::-webkit-scrollbar{
+        height: 0;
+    }
+    .sidebar__wrapper h3{
+        display: none;
+    }
+    .sidebar{
+        border: none;
+        display: block;
+    }
+    .rubric{
+        border: none;
+        white-space: nowrap;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+}
