@@ -124,3 +124,31 @@
 .button:hover{
     background-color: #75D2FF;
 }
+@media (max-width: 1135px) {
+    .consultation_form h3{
+        font-size: 1.75rem;
+    }
+    .submit{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .button{
+        width: 100%;
+    }
+}
+@media (max-width: 850px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .sidebar{
+        display: block;
+        border-right: none;
+        order: 1;
+        margin-top: 30px;
+        border-top: 1px solid #D2D6DF;
+        padding-top: 30px;
+    }
+}
