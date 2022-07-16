@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header_footer.css">
-    <link rel="stylesheet" href="./css/article.css">
     <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/article.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Приёмка квартиры в ЖК «Южное Бунино»</title>
 </head>
@@ -76,13 +76,17 @@
             </div>
         </div>
     </header>
-
+    <div class="mobile_image">
+        <img src="./img/Bunino/article_main.png" alt="">
+    </div>
     <div class="main_section _first-block _container">
         <section class="left_section">
             <div class="section_wrapper">
-                <h1>Приёмка квартиры <br> в ЖК «Южное Бунино»</h1>
-                <p>Отделка от застройщика</p>
-                <p>Проверка проходила по 142 параметрам.</p>
+                <div class="left_section__title">
+                    <h1>Приёмка квартиры <br> в ЖК «Южное Бунино»</h1>
+                    <p>Отделка от застройщика</p>
+                    <p>Проверка проходила по 142 параметрам.</p>
+                </div>
                 <div class="selected_image">
                     <img src="./img/Bunino/item_1.png" id="selected_image" alt="">
                 </div>
@@ -93,7 +97,7 @@
                     <div><img src="./img/Bunino/item_2.png" alt="" class="collection_item"></div>
                     <div><img src="./img/Bunino/item_1.png" alt="" class="collection_item"></div>
                 </div>
-                <button type="button" class="left_section__button button">Получить консультацию</button>
+                <button type="button" class="left_section__button button" onclick="ShowModal()">Получить консультацию</button>
             </div>
         </section>
 
