@@ -57,6 +57,7 @@ a {
     text-decoration: underline;
 }
 .burger{
+    -webkit-tap-highlight-color: transparent;
     display: none;
 }
 .header__burger_menu{
@@ -74,10 +75,11 @@ a {
     overflow-y: auto;
 }
 .burger_navigation{
+    box-sizing: border-box;
     position: absolute;
     right: 0;
-    font-size: 2rem;
-    padding: 30px;
+    font-size: 1.75rem;
+    padding: 10px 30px;
     width: 50%;
     min-height: 100%;
     background-color: white;
@@ -347,6 +349,9 @@ a {
     .footer__bottom>._container{
         align-items: flex-start;
     }
+    .burger_navigation{
+        font-size: 1.25rem;
+    }
 }
 @media(max-width:360px){
     :root{
@@ -360,6 +365,9 @@ a {
     }
     .burger{
         width: 26px;
+    }
+    .burger_navigation{
+        font-size: 1rem;
     }
 }
 

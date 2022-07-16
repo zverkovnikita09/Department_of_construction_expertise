@@ -327,3 +327,8 @@
         line-height: 2.75rem;
     }
 }
+@media (max-width:450px) {
+    .left_section__button{
+        width: 75%;
+    }
+}

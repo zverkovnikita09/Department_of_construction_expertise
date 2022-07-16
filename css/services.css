@@ -305,7 +305,6 @@ svg.path._active path{
 }
 .mobile_nav{
     display: none;
-    background-color: #EDEFF2;
 }
 @media (max-width: 1135px) {
     .list2{
