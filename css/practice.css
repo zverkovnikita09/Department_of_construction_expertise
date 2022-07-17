@@ -175,6 +175,9 @@ a.disabled{
     .apartments__list{
         margin-top: 0px;
     }
+    .description_court p:last-child{
+        font-size: 1.125rem;
+    }
 }
 @media(max-width: 800px){
     .apartements_description h3{
@@ -182,6 +185,12 @@ a.disabled{
     }
     .description_court p:first-child{
         font-size: 2rem;
+    }
+    .practice_sidebar__links a{
+        font-size: 1.5rem;
+    }
+    .pages{
+        font-size: 1.75rem;
     }
 }
 @media(max-width: 660px){
@@ -193,21 +202,25 @@ a.disabled{
         display: none;
     }
     .apartements_description h3 {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
     .description_court p:first-child {
         font-size: 2.9rem;
+        margin-top: 10px;
     }
 }
-@media(max-width: 350px){
-    .apartements_description h3 {
-        font-size: 1.8rem;
+@media (max-width:490px) {
+    .apartements_description h3{
+        font-size: 1.75rem;
     }
     .description_court p:first-child {
         font-size: 2.5rem;
     }
+    .practice_sidebar__links a{
+        font-size: 1.25rem;
+    }
 }
-@media(max-width: 420px){
+@media(max-width: 350px){
     .apartements_description h3 {
         font-size: 1.5rem;
     }

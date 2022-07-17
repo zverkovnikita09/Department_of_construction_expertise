@@ -469,6 +469,12 @@
     .aside{
         margin-top: 40px;
     }
+    .button{
+        font-size: 1.25rem;
+    }
+    .acceptance label{
+        font-size: 1.2rem;
+    }
 }
 @media (max-width: 750px){
     .block_3{
