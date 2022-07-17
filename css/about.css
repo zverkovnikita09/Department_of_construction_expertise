@@ -152,6 +152,10 @@
     }
 }
 @media (max-width: 970px){
+    .main{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
     .main__logo{
         display: none;
     }
@@ -163,6 +167,9 @@
     }
     .quality{
         grid-area: 2/1/3/6;
+    }
+    .quality_housing__text{
+        padding: 20px;
     }
 }
 @media (max-width: 750px){
@@ -192,5 +199,60 @@
     }
     .quality{
         order: 2;
+    }
+    .name h4{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:640px){
+    .description h1{
+        margin-bottom: 20px;
+        font-size: 1.9rem;
+    }
+    .description p{
+        font-size: 1.2rem;
+    }
+    .cards{
+        margin-top: 20px;
+    }
+    .card__text{
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+    .aside h3{
+        font-size: 1.75rem;
+    }
+    .name h4{
+        font-size: 2.25rem;
+    }
+    .name p{
+        font-size: 1.25rem;
+    }
+    .quality_housing__text{
+        padding: 15px;
+    }
+}
+@media(max-width:450px){
+    .description h1{
+        font-size: 1.75rem;
+    }
+    .aside h3{
+        font-size: 2rem;
+    }
+    .quality_housing__text>p{
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+    .expertise{
+        margin-top: 20px;
+    }
+    .expertise p{
+        padding-top: 20px;
+    }
+    .foto{
+        width: 90px;
+    }
+    .team_item{
+        display: block;
     }
 }
