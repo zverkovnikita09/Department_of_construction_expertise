@@ -93,6 +93,13 @@ a {
 .burger_navigation li:last-child{
     border-bottom: none;
 }
+.burger_navigation li a{
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+}
+.burger_navigation li a:hover{
+    text-decoration: underline;
+}
 .header__bottom ._container{
     display: flex;
     justify-content: space-between;
