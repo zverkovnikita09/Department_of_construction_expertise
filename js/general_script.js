@@ -12,6 +12,7 @@ burger.addEventListener('click',()=>{
         body.style.overflowY = 'auto';
         burger_nav.style.transform = 'translateX(100%)'
         burger.src=('./img/burger.svg');
+        burger.style.transform="scale(1)"
         setTimeout(() => {
             burger_menu.classList.toggle('_active');
         }, 250);
@@ -20,13 +21,14 @@ burger.addEventListener('click',()=>{
         body.style.overflowY = 'hidden';
         burger_menu.classList.toggle('_active');
         burger.src=('./img/x_button.svg');
+        burger.style.transform="scale(0.8)"
         setTimeout(() => {
             burger_nav.style.transform = 'translateX(0%)' 
         }, 10);
     }
 })
 window.addEventListener('resize', function(){
-    if(burger_menu.classList.contains('_active')&&window.innerWidth > 870)
+    if(burger_menu.classList.contains('_active')&&window.innerWidth > 970)
     {
         body.style.overflowY = 'auto';
         burger_nav.style.transform = 'translateX(100%)'

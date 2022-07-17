@@ -78,7 +78,7 @@ a {
     box-sizing: border-box;
     position: absolute;
     right: 0;
-    font-size: 1.75rem;
+    font-size: 2rem;
     padding: 10px 30px;
     width: 50%;
     min-height: 100%;
@@ -312,6 +312,9 @@ a {
     .footer__bottom{
         height: auto;
     }
+    .burger_navigation{
+        width: 75%;
+    }
 }
 @media(max-width:540px){
     .footer__logo{
@@ -350,7 +353,7 @@ a {
         align-items: flex-start;
     }
     .burger_navigation{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 }
 @media(max-width:360px){
@@ -367,7 +370,10 @@ a {
         width: 26px;
     }
     .burger_navigation{
-        font-size: 1rem;
+        font-size: 1.25rem;
+    }
+    .burger_navigation{
+        width: 100%;
     }
 }
 
