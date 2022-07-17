@@ -57,6 +57,9 @@
     .target{
         width: 3%;
     }
+    .address img{
+        top: 1px;
+    }
 }
 @media (max-width:895px) {
     .address img{
@@ -90,8 +93,14 @@
         display: block !important;
         padding: 30px 20px 30px 50px;
     }
+    .Moscow-item{
+        padding-right: 0;
+    }
     .map_img{
         min-height: 200px;
+    }
+    .address h3{
+        font-size: 1.6rem;
     }
 }
 @media (max-width: 440px) {
@@ -106,5 +115,18 @@
     .address_item{
         box-sizing: border-box;
         width: 100%;
+    }
+    .address__content>p{
+        margin-top: 10px;
+    }
+    .address__content>p>a{
+        font-size: 2rem;
+    }
+    .address__content{
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+    .address__content>p{
+        font-size: 1.25rem;
     }
 }

@@ -146,7 +146,7 @@ input[type='checkbox']:checked + label.checkbox_label:hover{
         font-size: 12px;
     }
 }
-@media (max-width: 490px) {
+@media (max-width: 540px) {
     .modal_submit{
         flex-direction: column;
         align-items: flex-start;
@@ -161,7 +161,7 @@ input[type='checkbox']:checked + label.checkbox_label:hover{
         font-size: 2rem;
     }
 }
-@media (max-width: 380px) {
+@media (max-width: 450px) {
     .modal_window h3{
         font-size: 1.75rem;
     }

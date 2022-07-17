@@ -348,12 +348,20 @@
     .proposition__card:first-child{
         display: none;
     }
+    .card_text{
+        padding: 20px;
+    }
     .card_text h3{
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+    .card_bottom{
+        padding: 20px;
     }
     .card_bottom p{
-        font-size: 1.25rem;
         line-height: 1.875rem;
+    }
+    .aside_text{
+        padding-left: 0;
     }
 }
 @media (max-width: 1065px){
@@ -502,7 +510,7 @@
         width: 100%;
     }
 }
-@media(max-width:380px){
+@media(max-width:450px){
     .description>h1{
         font-size: 1.7rem;
     }
