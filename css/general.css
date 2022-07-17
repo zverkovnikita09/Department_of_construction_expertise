@@ -155,14 +155,20 @@ input[type='checkbox']:checked + label.checkbox_label:hover{
         width: 100%;
     }
     .modal_window{
-        padding: 20px;
+        padding: 30px;
     }
     .modal_window h3{
         font-size: 2rem;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
     .modal_window h3{
         font-size: 1.75rem;
+    }
+    .modal_button{
+        font-size: 1.25rem;
+    }
+    .modal_acceptance label{
+        font-size: 1.15rem;;
     }
 }

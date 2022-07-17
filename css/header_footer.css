@@ -347,13 +347,13 @@ a {
     .footer__connection{
         margin-top: 15px;
         flex-direction: column;
-        padding-left: calc(26px*2);
+        padding-left: calc(26px + 15px);
     }
     .footer__bottom ._container{
         flex-direction: column;
     }
     .footer__bottom .icons{
-        padding-left: calc(26px*2);
+        padding-left: calc(26px + 15px);
         justify-content: flex-start;
     }
     .footer__bottom>._container{
@@ -363,7 +363,7 @@ a {
         font-size: 1.5rem;
     }
 }
-@media(max-width:360px){
+@media(max-width:380px){
     :root{
         --headerHeight: 60px;
     }
@@ -381,6 +381,24 @@ a {
     }
     .burger_navigation{
         width: 100%;
+    }
+    .modal_window .input{
+        font-size: 1.25rem;
+    }
+    .footer__top._container{
+        padding-top: 30px;
+    }
+    .footer__text p{
+        font-size: 1.25rem;
+    }
+    .footer__text address{
+        margin-top: 25px;
+    }
+    .footer__bottom .icons{
+        height: 20px;
+    }
+    .footer__connection{
+        gap: 10px; 
     }
 }
 

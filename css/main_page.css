@@ -118,6 +118,7 @@
     font-size: 0.875rem;
     margin-left: 10px;
     user-select: none;
+    color: #6C717B;
 }
 /*Block 2*/
 
@@ -234,6 +235,7 @@
 }
 .article_title{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-weight: 500;
     letter-spacing: 0.1rem;
@@ -417,9 +419,6 @@
         color: #1BA6FF;
         text-decoration: underline;
     }
-    .description p{
-        font-size: 1.15rem;
-    }
     .description .button{
         display: none;
     }
@@ -468,7 +467,7 @@
         display: block;
     }
     .digits{
-        margin-top: 60px;
+        margin-top: 45px;
     }
     .propositions>._container{
         display: flex;
@@ -501,5 +500,76 @@
         display: block;
         margin-top: 20px;
         width: 100%;
+    }
+}
+@media(max-width:380px){
+    .description>h1{
+        font-size: 1.7rem;
+    }
+    .description p{
+        font-size: 1.15rem;
+    }
+    .question__form{
+        padding: 20px;
+    }
+    .question__form h2{
+        font-size: 2rem;
+    }
+    .acceptance{
+        text-align: left;
+    }
+    .acceptance label{
+        font-size: 1.15rem;
+    }
+    .submit .button{
+        font-size: 1.25rem;
+    }
+    .card_text{
+        padding: 15px;
+    }
+    .card_text h3{
+        font-size: 1.6rem;
+    }
+    .card_bottom{
+        padding: 15px;
+    }
+    .proposition__card .button{
+        font-size: 1.25rem;
+    }
+    .propositions{
+        padding-bottom: 25px;
+    }
+    .quality_housing__text{
+        padding: 15px;
+    }
+    .quality_housing__text>p{
+        font-size: 1.25rem;
+    }
+    .quality_housing__title h3{
+        font-size: 1.6rem;
+    }
+    .digits{
+        display: flex;
+        flex-direction: column;
+    }
+    .digits>h3{
+        font-size: 2rem;
+    }
+    .digits li>p:first-child{
+        font-size: 3rem;
+    }
+    .digits li{
+        border-bottom: 1px solid #D2D6DF;
+    }
+    .main_second .block_1, .main_second .block_2{
+        padding-top: 35px;
+        padding-bottom: 0;
+    }
+    .article_title p{
+        font-size: 1.5rem;
+    }
+    .aside_text{
+        padding: 20px;
+        padding-left: 0;
     }
 }
