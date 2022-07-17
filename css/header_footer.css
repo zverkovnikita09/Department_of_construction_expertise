@@ -368,7 +368,8 @@ a {
         --headerHeight: 60px;
     }
     .header__title p{
-        font-size: 1rem;
+        font-size: 1.125rem;
+        margin-left: 10px;
     }
     .header__title .logo{
         width: 26px;

@@ -91,8 +91,11 @@
     .article_text{
         margin-top: 15px;
     }
+    .rubric{
+        font-size: 1.5rem;
+    }
 }
-@media (max-width:835px) {
+@media (max-width:735px) {
     .main{
         margin-top: 0;
         margin-bottom: 30px;
@@ -118,5 +121,9 @@
         white-space: nowrap;
         -webkit-tap-highlight-color: transparent;
     }
-    
+}
+@media(max-width:640px){
+    .rubric{
+        font-size: 1.25rem;
+    }
 }
