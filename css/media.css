@@ -86,13 +86,23 @@
     .article_1{
         display: block;
         border-bottom: 1px solid #D2D6DF;
-        padding-bottom: 40px;
     }
     .article_text{
-        margin-top: 15px;
+        margin-top: 30px;
+        margin-bottom: 40px;
     }
     .rubric{
         font-size: 1.5rem;
+    }
+}
+@media (max-width:850px){
+    .article{
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .article_text{
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 }
 @media (max-width:735px) {
@@ -125,5 +135,12 @@
 @media(max-width:640px){
     .rubric{
         font-size: 1.25rem;
+    }
+    .article{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .article_text{
+        margin-bottom: 20px;
     }
 }

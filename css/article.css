@@ -219,7 +219,10 @@
 }
 
 .left_section__offer .button{
+    box-sizing: border-box;
     margin-top: 30px;
+    width: 100%;
+    padding: 15px;
 }
 @media (max-width: 1135px) {
     .consultation_form h3{
@@ -248,11 +251,11 @@
     .left_section__offer{
         padding: 15px;
     }
-    .left_section__offer .button{
-        padding: 15px;
+    .table_item{
+        font-size: 0.9rem;
     }
 }
-@media (max-width: 850px) {
+@media (max-width: 875px) {
     .main_section{
         display: flex;
         flex-direction: column;
@@ -359,6 +362,12 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    .table_item{
+        font-size: 1.2rem;
+    }
+    .total p:last-child{
+        font-size: 1.75rem;
+    }
 }
 @media (max-width: 760px) {
     .left_section__offer h3{
@@ -374,7 +383,7 @@
         margin-bottom: 7px;
     }
 }
-@media (max-width: 640px){
+@media (max-width: 680px){
     .section_wrapper h1{
         font-size: 1.5rem;
         line-height: 2rem;
@@ -408,9 +417,6 @@
     .table_item{
         display: block;
         margin-top: 10px;
-    }
-    .table_item p:last-child{
-        font-weight: bold;
     }
     .total p:last-child{
         font-size: 2rem;

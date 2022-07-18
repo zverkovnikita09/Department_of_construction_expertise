@@ -212,6 +212,14 @@
     .description p{
         font-size: 1.2rem;
     }
+    .expertise p{
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+    .quality_housing__text>p{
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
     .cards{
         margin-top: 20px;
     }
@@ -238,10 +246,6 @@
     }
     .aside h3{
         font-size: 2rem;
-    }
-    .quality_housing__text>p{
-        font-size: 1.2rem;
-        line-height: 1.75rem;
     }
     .expertise{
         margin-top: 20px;

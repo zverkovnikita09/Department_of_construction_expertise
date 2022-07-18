@@ -376,6 +376,19 @@ svg.path._active path{
         background-color: #EDEFF2;
         padding: 20px;
     }
+    .sale_title{
+        padding: 15px;
+    }
+}
+@media(max-width:550px){
+    .list1{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-side__sale{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1.5fr;
+    }
 }
 @media(max-width:450px){
     .scheme{

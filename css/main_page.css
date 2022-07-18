@@ -275,9 +275,6 @@
 .aside_text h3:hover{
     text-decoration: underline;
 }
-.aside_text:last-child{
-    display: none;
-}
 .block_3{
     padding: 50px 0;
 }
@@ -457,14 +454,8 @@
     .publications{
         display: block;
     }
-    .article_text{
-        display: none;
-    }
-    .aside_text:last-child{
-        display: block;
-    }
     .aside_text{
-        padding-left: 0;
+        padding: 30px 0;
     }
     .aside{
         margin-top: 40px;
@@ -474,6 +465,20 @@
     }
     .acceptance label{
         font-size: 1.2rem;
+    }
+    .article_text{
+        padding-bottom: 30px;
+        border-bottom: 1px solid #D2D6DF;
+    }
+    .article_text h3{
+        font-size: 1.75rem;
+    }
+    .aside{
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .aside_text:nth-child(1){
+        padding-top: 30px;
     }
 }
 @media (max-width: 750px){
@@ -514,6 +519,17 @@
         display: block;
         margin-top: 20px;
         width: 100%;
+    }
+}
+@media (max-width: 640px) {
+    .aside_text{
+        padding: 20px 0;
+    }
+    .aside_text:nth-child(1){
+        padding-top: 20px;
+    }
+    .article_text{
+        padding-bottom: 20px;
     }
 }
 @media(max-width:450px){
