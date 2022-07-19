@@ -433,6 +433,9 @@ svg.path._active path{
     .right-side__list{
         grid-gap: 10px;
     }
+    .switch__block_item{
+        margin-top: 10px;
+    }
 }
 @media (max-width: 650px) {
     .consultation_form {
