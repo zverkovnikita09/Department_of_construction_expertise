@@ -373,11 +373,13 @@ svg.path._active path{
     .switch_list {
         display: none;
     }
-    .switch__block_item:nth-child(n){
-        display: block !important;
+    .switch__block_item{
         margin-top: 20px;
         background-color: #EDEFF2;
         padding: 20px;
+    }
+    .switch__block_item:nth-child(n){
+        display: block !important;
     }
     .sale_title{
         padding: 15px;
@@ -389,7 +391,7 @@ svg.path._active path{
         font-size:var(--small-font);
     }
     .right-side__list li{
-        font-size: var(--small-font);
+        font-size: 1.35rem;
     }
     .left-side__block1 li{
         font-size: var(--small-font);
@@ -425,6 +427,12 @@ svg.path._active path{
     .consultation_form h3>p{
         font-size: var(--small-font);
     }
+    .scheme{
+        margin-top: 40px;
+    }
+    .right-side__list{
+        grid-gap: 10px;
+    }
 }
 @media (max-width: 650px) {
     .consultation_form {
@@ -445,6 +453,16 @@ svg.path._active path{
     .main{
         margin-bottom: 30px;
     }
+    .switch__block_item{
+        font-size: var(--small-font);
+        padding: 10px;
+    }
+    .left-side__block1 li{
+        padding: 10px 0;
+    }
+    .left-side__digits li{
+        padding: 20px 0;
+    }
 }
 @media(max-width:550px){
     .list1{
@@ -464,7 +482,7 @@ svg.path._active path{
         gap: 30px;
     }
     .left-side__block1{
-        padding-right: 30;
+        padding-right: 0;
         border-right: none;
     }
     .left-side__digits{
