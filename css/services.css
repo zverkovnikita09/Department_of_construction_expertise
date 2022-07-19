@@ -1,3 +1,6 @@
+:root{
+    --small-font: 1.2rem;
+}
 li{
     list-style: none;
 }
@@ -91,7 +94,7 @@ li{
 }
 .sale_title h4{
     color: #AFE5FF;
-    font-size: 1.2rem;
+    font-size: var(--small-font);
 }
 .sale_title p{
     margin-top: 5px;
@@ -306,7 +309,7 @@ svg.path._active path{
 .mobile_nav{
     display: none;
 }
-@media (max-width: 1135px) {
+@media (max-width: 1155px) {
     .list2{
         grid-template-columns: repeat(3,1fr);
     }
@@ -314,9 +317,6 @@ svg.path._active path{
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
-    .consultation_form h3{
-        font-size: 1.75rem;
     }
     .submit{
         flex-direction: column;
@@ -326,12 +326,15 @@ svg.path._active path{
     .button{
         width: 100%;
     }
+    .links{
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 850px) {
     .main{
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .mobile_nav{
         display: block;
@@ -379,6 +382,69 @@ svg.path._active path{
     .sale_title{
         padding: 15px;
     }
+    .button{
+        font-size: 1.25rem;
+    }
+    .consultation_form label{
+        font-size:var(--small-font);
+    }
+    .right-side__list li{
+        font-size: var(--small-font);
+    }
+    .left-side__block1 li{
+        font-size: var(--small-font);
+    }
+    .left-side__digits li>p:last-child{
+        font-size: var(--small-font);
+    }
+    .left-side__digits>h3{
+        font-size: 1.75rem;
+    }
+    .list3 p{
+        font-size: var(--small-font);
+        line-height: 1.75rem;
+    }
+    .right-side>h3{
+        margin-top: 35px;
+    }
+    .form_1, .form_2, .form_3, .form_4{
+        margin-top: 40px;
+    }
+    .description_item>p{
+        font-size: var(--small-font);
+    }
+    .right-side__block{
+        margin-top: 40px;
+    }
+    .right-side__block>p{
+        font-size: var(--small-font);
+    }
+    .list_block_1{
+        margin-top: 30px;
+    }
+    .consultation_form h3>p{
+        font-size: var(--small-font);
+    }
+}
+@media (max-width: 650px) {
+    .consultation_form {
+        padding: 20px;
+    }
+    .left-side__digits li>p:first-child{
+        font-size: 3rem;
+    }
+    .scheme{
+        display: none;
+    }
+    .form_2{
+        display: none;
+    }
+    .right-side>h1{
+        font-size: 2rem;
+    }
+    .main{
+        margin-bottom: 30px;
+    }
 }
 @media(max-width:550px){
     .list1{
@@ -389,13 +455,8 @@ svg.path._active path{
         grid-template-columns: none;
         grid-template-rows: 1fr 1.5fr;
     }
-}
-@media(max-width:450px){
-    .scheme{
-        display: none;
-    }
-    .form_2{
-        display: none;
+    .consultation_form h3{
+        font-size: 2rem;
     }
     .left-side-wrapper{
         display: flex;
@@ -409,8 +470,37 @@ svg.path._active path{
     .left-side__digits{
         padding-left: 0;
     }
+    .links{
+        font-size: 1.25rem;
+        padding: 20px 0;
+    }
+    .right-side__list li{
+        padding: 10px;
+    }
+    .left-side__digits>h3{
+        font-size: 2rem;
+    }
+    .consultation_form .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inputs>input[placeholder='Имя']{
+        order: 1;
+    }
+    .inputs>input[placeholder='Телефон']{
+        order: 2;
+    }
+}
+@media(max-width:450px){
     .list2{
         display: flex;
         flex-direction: column;
+    }
+    .right-side>h1{
+        font-size: 1.75rem;
+    }
+    .list3 h4{
+        font-size: var(--small-font);
     }
 }

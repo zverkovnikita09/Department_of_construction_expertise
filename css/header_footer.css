@@ -339,6 +339,12 @@ a {
     .burger_navigation{
         font-size: 1.5rem;
     }
+    .footer__top._container{
+        padding-top: 30px;
+    }
+    .footer__text p{
+        font-size: 1.25rem;
+    }
 }
 @media (max-width:540px) {
     .footer__logo{
@@ -384,12 +390,6 @@ a {
         width: 100%;
     }
     .modal_window .input{
-        font-size: 1.25rem;
-    }
-    .footer__top._container{
-        padding-top: 30px;
-    }
-    .footer__text p{
         font-size: 1.25rem;
     }
     .footer__text address{

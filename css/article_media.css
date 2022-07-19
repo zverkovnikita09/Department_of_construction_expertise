@@ -1,3 +1,6 @@
+:root{
+    --small-font: 1.2rem;
+}
 .main{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -43,13 +46,13 @@
     font-weight: 500;
     letter-spacing: 0.1rem;
     margin-bottom: 10px;
+    justify-content: space-between;
 }
 .article_title p{
     color: #E5000E;
 }
 .article_title time{
     color: #6C717B;
-    margin-left: 30px;
 }
 .article_img{
     margin-top: 35px;
@@ -124,10 +127,7 @@
 .button:hover{
     background-color: #75D2FF;
 }
-@media (max-width: 1135px) {
-    .consultation_form h3{
-        font-size: 1.75rem;
-    }
+@media (max-width: 1155px) {
     .submit{
         flex-direction: column;
         gap: 20px;
@@ -135,6 +135,9 @@
     }
     .button{
         width: 100%;
+    }
+    .rubric{
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 850px) {
@@ -157,5 +160,51 @@
     }
     .rubric:nth-child(4){
         border: none;
+    }
+    .article__block p{
+        font-size: var(--small-font);
+    }
+    .button{
+        font-size: 1.25rem;
+    }
+    .consultation_form label{
+        font-size:var(--small-font);
+    }
+    .article_title p{
+        font-size: var(--small-font);
+    }
+}
+@media (max-width: 650px) {
+    .consultation_form {
+        padding: 20px;
+    }
+    .article__block{
+        margin-top: 30px;
+    }
+    .article_img{
+        margin-top: 25px;
+    }
+    .article h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 550px) {
+    .rubric{
+        padding: 20px 0;
+        font-size: 1.25rem;
+    }
+    .sidebar{
+        padding-top: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .consultation_form h3{
+        font-size: 2rem;
+    }
+    .article h1{
+        font-size: 1.75rem;
+    }
+    .article__block h2{
+        font-size: var(--small-font);
     }
 }

@@ -202,28 +202,29 @@ a.disabled{
         display: none;
     }
     .apartements_description h3 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .description_court p:first-child {
         font-size: 2.9rem;
         margin-top: 10px;
     }
+    .main{
+        margin-bottom: 30px;
+    }
 }
-@media (max-width:490px) {
+@media (max-width:450px) {
     .apartements_description h3{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     .description_court p:first-child {
         font-size: 2.5rem;
     }
     .practice_sidebar__links a{
         font-size: 1.25rem;
+        padding: 20px 0;
     }
 }
 @media(max-width: 350px){
-    .apartements_description h3 {
-        font-size: 1.5rem;
-    }
     .description_court p:first-child {
         font-size: 2.5rem;
     }

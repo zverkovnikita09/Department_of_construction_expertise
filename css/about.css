@@ -4,6 +4,7 @@
     --mainPadding: 30px;
     --small-text-collor: #6C717B;
     --lineHeight: 1.5rem;
+    --small-font: 1.2rem;
 }
 .main {
     display: grid;
@@ -154,7 +155,7 @@
 @media (max-width: 970px){
     .main{
         margin-top: 50px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     .main__logo{
         display: none;
@@ -203,38 +204,38 @@
     .name h4{
         font-size: 2.5rem;
     }
+    .quality_housing__text>p{
+        font-size: var(--small-font);
+        line-height: 1.75rem;
+    }
+    .description p{
+        font-size: var(--small-font);
+    }
+    .card__text{
+        font-size: var(--small-font);
+        line-height: 1.75rem;
+    }
+    .name p{
+        font-size: 1.25rem;
+    }
 }
 @media(max-width:640px){
     .description h1{
         margin-bottom: 20px;
-        font-size: 1.9rem;
-    }
-    .description p{
-        font-size: 1.2rem;
+        font-size: 1.75rem;
     }
     .expertise p{
-        font-size: 1.2rem;
-        line-height: 1.75rem;
-    }
-    .quality_housing__text>p{
-        font-size: 1.2rem;
+        font-size: var(--small-font);
         line-height: 1.75rem;
     }
     .cards{
         margin-top: 20px;
-    }
-    .card__text{
-        font-size: 1.2rem;
-        line-height: 1.75rem;
     }
     .aside h3{
         font-size: 1.75rem;
     }
     .name h4{
         font-size: 2.25rem;
-    }
-    .name p{
-        font-size: 1.25rem;
     }
     .quality_housing__text{
         padding: 15px;

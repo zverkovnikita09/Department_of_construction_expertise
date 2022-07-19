@@ -133,14 +133,16 @@
     }
 }
 @media(max-width:640px){
-    .rubric{
-        font-size: 1.25rem;
-    }
     .article{
         margin-top: 20px;
         padding-bottom: 20px;
     }
     .article_text{
         margin-bottom: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .rubric{
+        font-size: 1.25rem;
     }
 }
