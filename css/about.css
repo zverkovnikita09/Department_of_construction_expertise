@@ -151,6 +151,9 @@
     .team_item{
         grid-template-columns: 90px 1fr;
     }
+    .card__title{
+        padding: 20px;
+    }
 }
 @media (max-width: 970px){
     .main{
