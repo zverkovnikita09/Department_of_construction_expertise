@@ -340,7 +340,7 @@
     }
     .right_section__list li{
         margin-top: 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-left: 5px;
     }
     .consultation_form{
@@ -350,7 +350,7 @@
         font-size: var(--small-font);
     }
     .right_section__list li p{
-        font-size: 1.25rem;
+        font-size: var(--small-font);
     }
     .right_section__list{
         margin-top: 20px;
